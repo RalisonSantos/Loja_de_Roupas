@@ -1,0 +1,154 @@
+@font-face {
+    font-family: fonte_txths;
+    src: url(/fontes/lemon_milk/LEMONMILK-Bold.otf);
+}
+
+/* Estilos globais */
+body {
+    width: 1366px;
+    height: auto;
+    font-family: Arial, sans-serif;
+    background-color: #082126;
+}
+
+.layout {
+    background-color: #082126;
+    width: 1366px;
+}
+
+.topbar2 {
+    background-color: #082626;
+    align-items: center;
+    width: 100%;
+
+}
+
+.topbar2 img {
+    height: 65px;
+    
+}
+
+.Meio {
+    background-color: #082126;
+    height: 230px;
+    text-align: center;
+}
+
+.txtmeioh1 {
+    color: #ddae58;
+    font-size: 60px;
+    font-family: fonte_txths;
+    text-align: center;
+    font-family: fonte_txths;
+
+}
+
+.txtmeioh2 {
+    color: #ddae58;
+    font-size: 35px;
+    margin-top: -45px;
+    font-family: fonte_txths;
+    text-align: center;
+    font-family: fonte_txths;
+
+
+}
+
+.container1 {
+    background-color: #082626;
+    text-align: center;
+    color: #D9a443;
+
+}
+
+.nossos {
+    color: #ddae58;
+    font-family: fonte_txths;
+}
+
+.botoes {
+    margin-bottom: 15px;
+    margin-left: 45px;
+}
+
+/* Reset básico */
+
+
+header h1 {
+    margin: 0;
+}
+
+section {
+    padding: 2rem 0;
+}
+
+section#home {
+    background: #082626;
+    text-align: center;
+    font-family: fonte_txths;
+}
+
+section#produtos {
+    background: #082126;
+}
+
+section#produtos .product-grid {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+section#produtos .product-item {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 1rem;
+    text-align: center;
+    width: 200px;
+    margin-left: 35px;
+
+
+}
+
+section#produtos .product-item img {
+    max-width: 100%;
+    height: auto;
+
+}
+
+section#produtos .product-item button {
+    background: #D9a443;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+
+}
+
+section#produtos .product-item button:hover {
+    background: #555;
+}
+
+.product-grid img {
+    border-radius: 20px;
+}
+
+.product-grid img:hover {
+    width: 300px;
+    height: 300px;
+    border-radius: 20px;
+    transform: translate(01px, -10px);
+    transition: 0.5s;
+
+}
+
+/* Rodapé */
+.rodape {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 0.5rem 0;
+    margin-top: 100px;
+
+}

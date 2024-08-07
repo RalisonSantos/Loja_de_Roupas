@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+html, body 
+{
+    width: 1366px;
+    height: 700px;
+    margin: 0 auto;
+}
+
+.layout
+{
+    background-color: #082126;
+}
+
+.topbar 
+{
+    background-color: #27433b;
+    height: 20px;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+
+}
+
+.lgnome 
+{
+    color: #D9a443;
+    font-family: fonte_quartenaria;
+
+}
+
+.logo
+{
+    height: 60px;
+    
+
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #fff
+}
+
+.page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    background-color: #082126;
+}
+
+.formEsqueci1 {
+    display: flex;
+    flex-direction: column;
+    background-color: #0c323a;
+    border-radius: 7px;
+    padding: 40px;
+    box-shadow: 10px 10px 40px rgba(0, 0, 0, 0.4);
+    gap: 5px
+}
+
+.formEsqueci1 h1 {
+    padding: 0;
+    margin: 0;
+    font-weight: 500;
+    font-size: 2.3em;
+}
+
+.formEsqueci1 p {
+    display: inline-block;
+    font-size: 14px;
+    color: #ddae58;
+    margin-bottom: 25px;
+}
+
+.formEsqueci1 input {
+    padding: 15px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+    margin-top: 5px;
+    border-radius: 4px;
+    transition: all linear 160ms;
+    outline: none;
+}
+
+
+.formEsqueci1 input:focus {
+    border: 2px solid #ddae58;
+}
+
+.formEsqueci1 label {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.formEsqueci1 a {
+    display: inline-block;
+    margin-bottom: 20px;
+    font-size: 13px;
+    color: #ddae58;
+    transition: all linear 160ms;
+}
+
+.formEsqueci1 a:hover {
+    color: #ddae58;
+}
+
+.btn {
+    background-color:#ddae58;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+    border: none !important;
+    transition: all linear 160ms;
+    cursor: pointer;
+    margin: 0 !important;
+
+}
+
+.btn:hover {
+    transform: scale(1.05);
+    background-color: #ddae58;
+
+}
+
+.formEsquecia nav a{
+   margin-right: 90px;
+   transform: translate(43px,0px);
+    
+}
+
+.page p{
+    color: #fff;
+}
+
