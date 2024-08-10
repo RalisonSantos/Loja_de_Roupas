@@ -1,11 +1,11 @@
-var radio = document.querySelector('manual-btn')
+var radio = document.querySelector('manual-btn');
 var cont = 1;
 
 document.getElementById('radio1').checked = true;
 
 setInterval(() => {
     proximaimg();
-},2000);
+},4000);
 
 function proximaimg(){
 
@@ -13,8 +13,8 @@ function proximaimg(){
 
     if(cont > 3){
         cont = 1;
-    };
+    }
 
-    document.getElementById('radio'+cont).checked = true;
+    document.getElementById('radio'+cont).checked = true; 
     
 };
