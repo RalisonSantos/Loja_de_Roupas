@@ -29,7 +29,6 @@ body {
     margin: 0;
     width: 100vw;
     height: 3000px;
-    
     background-color: #082126;
 }
 
@@ -193,10 +192,89 @@ body {
     background-color: #ddae58;
 }
 
+.carrossel {
+    margin: auto;
+    height: 550px;
+    width: 1250px;
+    position: relative;
+    margin-top: 60px;
+
+}
+
+.carrossel .img{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.carrossel .img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+    clip-path: circle(0% at 0% 100%);
+    transition: all 3s;
+}
+
+#um:checked ~ .img-1 img{
+    clip-path: circle(150% at 0% 100%);
+}
+
+#dois:checked ~ .img-2 img{
+    clip-path: circle(150% at 0% 100%);
+}
+
+#tres:checked ~ .img-3 img{
+    clip-path: circle(150% at 0% 100%);
+}
+
+#quatro:checked ~ .img-4 img{
+    clip-path: circle(150% at 0% 100%);
+}
+
+.carrossel input{
+    display: none;
+}
+
+.carrossel .lab-carrossel{
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 999;
+    display: flex;
+}
+
+.carrossel .lab-carrossel label{
+    height: 13px;
+    width: 13px;
+    border: 2px solid red;
+    margin: 0 5px;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: 0.2s;
+}
+
+#um:checked ~ .lab-carrossel label.um,
+#dois:checked ~ .lab-carrossel label.dois,
+#tres:checked ~ .lab-carrossel label.tres,
+#quatro:checked ~ .lab-carrossel label.quatro{
+    width: 45px;
+    border-radius: 14px;
+    background-color: red;
+    transition: all 0.3s;
+}
+
+.carrossel label:hover{
+    background-color: red;
+    
+}
+
 .pacote{
     max-width: 1366px;
     position: relative;
     padding: 0px 35px;
+    margin-top: 200px;
 }
 
 .pacote i{

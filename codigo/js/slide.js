@@ -1,20 +1,20 @@
-var radio = document.querySelector('manual-btn');
-var cont = 1;
+const slide = document.querySelector(".slide"),
+proximaimg = document.querySelectorAll("img")[0],
+mudandoimg = document.querySelectorAll(".pacote i");
 
-document.getElementById('radio1').checked = true;
+let isDragStart = false , prevPageX, prevScrollLeft;
+let modfbtn = proximaimg.clientWidth + 15;
+let scrollWidth = slide.scrollWidth - slide.clientWidth;
 
-setInterval(() => {
-    proximaimg();
-},4000);
+const mostrabtnsq = () => {
+    mudandoimg[0].style.display = slide.scrollLeft == 0 ? "none" : "block";
+    mudandoimg[1].style.display = slide.scrollLeft == scrollWidth ? "none" : "block";
+}
 
-function proximaimg(){
+mudandoimg.forEach(icon => {
+    icon.addEventListener("click", () => {
+        slide.scrollLeft += icon.id == "left" ? -modfbtn : modfbtn;
+        mostrabtnsq();
+    });
+});
 
-    cont++;
-
-    if(cont > 3){
-        cont = 1;
-    }
-
-    document.getElementById('radio'+cont).checked = true; 
-    
-};
