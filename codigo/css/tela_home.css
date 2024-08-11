@@ -29,7 +29,7 @@ body {
     margin: 0;
     width: 100vw;
     height: 3000px;
-    /* overflow-x: hidden; */
+    
     background-color: #082126;
 }
 
@@ -194,84 +194,50 @@ body {
 }
 
 .pacote{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    max-width: 1100px;
-    width: 100%;
-    margin-top: 70px;
-    
+    max-width: 1366px;
+    position: relative;
+    padding: 0px 35px;
 }
 
 .pacote i{
-    width: 50px;
-    height: 50px;
-    background-color: blue;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    background: #fff;
     text-align: center;
-    color: #fff;
-    line-height: 50px;
     border-radius: 50%;
-    position: absolute;
-    transform: translateX(50%);
     cursor: pointer;
-}
-
-.pacote i:first-child{
-    left: -22px;
-}
-
-.pacote i:last-child{
-    right: 30px;
-}
-
-.pacote .carrossel{
-    display: grid;
-    grid-auto-flow: column;
-    /* grid-auto-columns: calc((90% / 5) -12px); */
-    gap: 20px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-300%);
     
 }
 
-.carrossel :where(.card , .img){
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.pacote i:first-child{
+    left: 3px;
+    display: none;
 }
 
-.carrossel .card{
-    display: flex;
+.pacote i:last-child{
+    right: 3px;
+}
+
+.pacote .slide{
     cursor: pointer;
-    list-style: none;
-    background: #fff;
-    border-radius: 8px;
-    width: 300px;
-    height: 300px;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    padding-bottom: 15px;
+    font-size: 0px;
+    margin-top: 65px;
+    white-space: nowrap;
+    overflow: hidden;
+    scroll-behavior: smooth;
 }
 
-.card .img{
-    background-color: aqua;
-    width: 238px;
-    height: 238px;
-    border-radius: 10px;
-}
-
-.card .img img{
-    width: 230px;
-    height: 230px;
+.slide img{
+    height: 340px;
     object-fit: cover;
-    border-radius: 10px;
-    border: 2px solid black;
-}
-.card a{
-    text-decoration: none;
-    color: blueviolet;
-    padding: 8px;
-    background-color: brown;
-    border-radius: 10px;
-    margin: 20px 0px 0px;
+    width: calc(100% / 3);
+    margin-left: 15px;
 }
 
+.slide img:first-child{
+    margin-left: 0px;
+}
