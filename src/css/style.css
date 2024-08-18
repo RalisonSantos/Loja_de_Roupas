@@ -1,0 +1,185 @@
+@font-face {
+    font-family: fonte_logo;
+    src: url(../fontes/nike/Futura\ Std\ Heavy\ Oblique.ttf);
+}
+
+@font-face
+{
+    font-family: fonte_topnav;
+    src: url("../fontes/Sansita/Sansita-Regular.ttf");
+}
+
+@font-face
+{
+    font-family: fonte_top2nav;
+    src: url("../fontes/Sansita/Sansita-Italic.ttf");
+}
+
+@font-face {
+    font-family: fonte_conteudoshs;
+    src: url(../fontes/vogue/Vogue.ttf);
+}
+
+@font-face {
+    font-family: fonte_txths;
+    src: url(../fontes/lemon_milk/LEMONMILK-Bold.otf);
+}
+
+body {
+    margin: 0;
+    width: 100vw;
+    height: 3000px;
+    background-color: #082126;
+}
+
+.layout{
+    background-color: #082126;
+}
+
+.topbar {
+    background-color: #082126;
+    height: 20px;
+    padding: 9px;
+    display: flex;
+    align-items: center;
+}
+
+.topbar nav{
+    margin-left: auto;
+}
+
+.topbar nav a{
+    text-decoration: none;
+    color: #D9a443;
+    margin-right:15px;
+    font-family: fonte_topnav;
+}
+.topbar2{
+    padding: 20px;
+    display: flex;
+    height: 32px;
+    font-size: 17px;
+    background-color: #082626;
+    align-items: center; 
+}
+
+.topbar2 img{
+    height: 65px;
+}
+
+.topbar2 nav{
+    margin: 0 auto;
+}
+
+.topbar2 nav a{
+    text-decoration: none;
+    color: #D9a443;
+    margin-right: 50px;
+    font-family: fonte_top2nav;
+    position: relative;
+}
+
+.topbar2 nav a::after{
+    content: "";
+    width: 0%;
+    height: 3px;
+    background-color: #D9a443;
+    position: absolute;
+    bottom: -6px;
+    left: 0;
+    transition: 0.5s;
+}
+
+.topbar2 nav a:hover::after{
+    width: 100%;
+}
+
+.Meio{
+    background-color: #082126;
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.mbanner{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.mbanner img{
+    width: 100%;
+}
+
+.Meio .mtxt{
+    text-align: center;
+    font-family: Arial;
+    font-size: 13px;
+    color: #fff;
+    margin-top: 25px;
+}
+
+.Meio .mbtn{
+    text-align: center;
+    margin-top: 45px;
+}
+
+.mbtn a{
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    padding: 15px;
+    border-radius: 20px;
+    font-family: Arial;
+}
+
+.pacote{
+    max-width: 1366px;
+    position: relative;
+    padding: 0px 35px;
+    margin-top: 200px;
+}
+
+.pacote i{
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    background: #fff;
+    text-align: center;
+    border-radius: 50%;
+    cursor: pointer;
+    position: absolute;
+    top: 85%;
+    transform: translateY(-300%);
+    
+}
+
+.pacote i:first-child{
+    left: 3px;
+    display: none;
+}
+
+.pacote i:last-child{
+    right: 3px;
+}
+
+.pacote .slide{
+    font-size: 0px;
+    margin-top: 65px;
+    white-space: nowrap;
+    overflow: hidden;
+    scroll-behavior: smooth;
+}
+
+.slide img{
+    height: 340px;
+    object-fit: cover;
+    width: calc(100% / 3);
+    margin-left: 15px;
+}
+
+.slide img:first-child{
+    margin-left: 0px;
+}

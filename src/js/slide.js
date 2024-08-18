@@ -3,7 +3,7 @@ proximaimg = document.querySelectorAll("img")[0],
 mudandoimg = document.querySelectorAll(".pacote i");
 
 let isDragStart = false , prevPageX, prevScrollLeft;
-let modfbtn = proximaimg.clientWidth + 15;
+let modfbtn = proximaimg.clientWidth + 300;
 let scrollWidth = slide.scrollWidth - slide.clientWidth;
 
 const mostrabtnsq = () => {
