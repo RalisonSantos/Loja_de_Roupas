@@ -3,23 +3,26 @@
     src: url(../fontes/lemon_milk/LEMONMILK-Bold.otf);
 }
 
-/* Estilos globais */
 body {
-    width: 1366px;
-    height: auto;
+    width: 100vw;
+    height: 100vh;
     font-family: Arial, sans-serif;
     background-color: #082126;
+    margin: 0;
+    
 }
 
 .layout {
     background-color: #082126;
-    width: 1366px;
 }
 
 .topbar2 {
+    display: flex;
+    padding: 20px;
+    height: 32px;
+    font-size: 17px;
     background-color: #082626;
-    align-items: center;
-    width: 100%;
+    align-items: center; 
 
 }
 
@@ -30,7 +33,6 @@ body {
 
 .Meio {
     background-color: #082126;
-    height: 230px;
     text-align: center;
 }
 
@@ -70,9 +72,6 @@ body {
     margin-bottom: 15px;
     margin-left: 45px;
 }
-
-/* Reset básico */
-
 
 header h1 {
     margin: 0;
