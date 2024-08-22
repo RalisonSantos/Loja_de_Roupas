@@ -50,10 +50,10 @@ body {
 }
 
 .topbar nav{
-    margin: auto;
+    
 }
 
-.topbar nav a:not(:last-child){
+.topbar nav a{
     text-decoration: none;
     color: #D9a443;
     margin-right: 50px;
@@ -61,10 +61,10 @@ body {
     position: relative;
 }
 
-.topbar a{
+.topbar .toplogin{
     text-decoration: none;
     color: #D9a443;
-    margin-right:5px;
+    
     font-family: fonte_topnav;
 }
 
