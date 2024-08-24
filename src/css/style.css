@@ -30,6 +30,8 @@ body {
     width: 100vw;
     height: 100vh;
     background-color: #082126;
+    align-items: center;
+    justify-content: center;
 }
 
 .layout{
@@ -42,23 +44,40 @@ body {
     height: 32px;
     font-size: 17px;
     background-color: #082626;
-    align-items: center; 
+    align-items: center;
 }
 
-.topbar img{
-    height: 65px;
-}
-
-.topbar nav{
+.topbar .top1{
+    display: flex;
+    margin: 0 auto;
     
 }
 
-.topbar nav a{
+.topbar .top1 nav a{
     text-decoration: none;
     color: #D9a443;
-    margin-right: 50px;
+    margin: 15px;
     font-family: fonte_top2nav;
     position: relative;
+}
+
+.topbar .top2{
+    display: flex;
+    
+}
+
+.topbar .top2 nav a{
+    text-decoration: none;
+    color: #D9a443;
+    margin: 5px;
+    font-family: fonte_top2nav;
+    position: relative;
+}
+
+.topbar img{
+    width: 65px;
+    height: 65px;
+    align-items: center;
 }
 
 .topbar .toplogin{
