@@ -1,28 +1,11 @@
-@font-face {
-    font-family: fonte_logo;
-    src: url(../fontes/nike/Futura\ Std\ Heavy\ Oblique.ttf);
-}
-
-@font-face
-{
+@font-face{
     font-family: fonte_topnav;
-    src: url("../fontes/Sansita/Sansita-Regular.ttf");
-}
-
-@font-face
-{
-    font-family: fonte_top2nav;
-    src: url("../fontes/Sansita/Sansita-Italic.ttf");
-}
-
-@font-face {
-    font-family: fonte_conteudoshs;
-    src: url(../fontes/vogue/Vogue.ttf);
+    src: url("../fontes/barra_de_navegacao/Sansita-Regular.ttf");
 }
 
 @font-face {
     font-family: fonte_txths;
-    src: url(../fontes/lemon_milk/LEMONMILK-Bold.otf);
+    src: url(../fontes/textoh/LEMONMILK-Bold.otf);
 }
 
 body {
@@ -45,6 +28,7 @@ body {
     font-size: 17px;
     background-color: #082626;
     align-items: center;
+    
 }
 
 .topbar .top1{
@@ -57,20 +41,19 @@ body {
     text-decoration: none;
     color: #D9a443;
     margin: 15px;
-    font-family: fonte_top2nav;
+    font-family: fonte_topnav;
     position: relative;
 }
 
 .topbar .top2{
-    display: flex;
-    
+    display: flex;   
 }
 
 .topbar .top2 nav a{
     text-decoration: none;
     color: #D9a443;
-    margin: 5px;
-    font-family: fonte_top2nav;
+    margin-right: 15px;
+    font-family: fonte_topnav;
     position: relative;
 }
 
