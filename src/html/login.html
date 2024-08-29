@@ -12,13 +12,13 @@
         </div>
 
         <div class="page">
-            <form action="../php/login.php" method="POST" class="formLogin">
+            <form method="post" action="../php/salvar.php" class="formLogin">
                 <h1>Login</h1>
                 <p>Digite os seus dados de acesso no campo abaixo.</p>
-                <label>E-mail</label>
-                <input type="email" placeholder="Digite seu e-mail" autofocus="true" name="email" />
-                <label>Senha</label>
-                <input type="password" placeholder="Digite sua senha" name="senha" />
+                <label for="email">E-mail</label>
+                <input type="email" placeholder="Digite seu e-mail" autofocus="true" name="email" id="email" />
+                <label for="senha">Senha</label>
+                <input type="password" placeholder="Digite sua senha" name="senha" id="senha" />
                 <nav>
                 <a href="../html/esqueci_email.html">Esqueci minha senha</a>
                 <a href="../html/registrar.html">Registrar</a>
