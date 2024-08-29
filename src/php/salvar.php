@@ -5,9 +5,10 @@ $senha = $_POST["senha"];
 
 $con = new mysqli("localhost", "root", "", "loja");
 
-$res = $con->query("SELECT * FROM loja.usuarios");
+$con->query("insert into usuarios(email,senha) values ('$email','$senha');");
 
+$con->close();
 
-
+echo "Usuario Cadastrado!"  
 
  ?>
