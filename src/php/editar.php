@@ -32,7 +32,7 @@
     </div>
 
     <div class="page">
-        <form method="POST" action="../php/salvar.php" class="formRegistrar">
+        <form method="POST" action="../php/alterar.php" class="formRegistrar">
             <input type="hidden" name="id" value="<?=$id?>" />
             <h1>Registrar</h1>
             <p>Digite os seus dados de acesso no campo abaixo.</p>

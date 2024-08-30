@@ -2,12 +2,14 @@
     $id = $_POST["id"];
     $nome = $_POST["nome"];
     $email = $_POST["email"];
-    $data = $_POST["datanascimento"];
+    $datan = $_POST["datanascimento"];
     $senha = $_POST["senha"];
 
     $con = new mysqli("localhost", "root", "", "loja");
 
-    $con->query("UPDATE loja set nome = '$nome',set email = '$email',set nome = '$nome',set nome = '$nome'");
+    $con->query("update loja.usuarios set nome = '$nome', email = '$email', data_nascimento = '$datan', senha = '$senha' where id = $id");
 
     $con->close();
+
+    echo "alterado com sucesso!";
 ?>
