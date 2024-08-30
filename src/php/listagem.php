@@ -1,21 +1,44 @@
-<link rel="stylesheet" href="../css/listagem.css">
-<div class="layout"></div>
-<div class="topbar">    
-        <a href="../html/index.html" ><img src="../imagens/logo.png" class="logo"></a>
-</div>
-<div class="Meio">
-    <table class="tabela" border="1">
-        <thead>
-            <tr>
-                <th>Nome</th>
-                <th>Email</th>
-                <th>Data Nascimento</th>
-                <th>Senha</th>
-                <th>Editar</th>
-            </tr>
-        </thead>
-        <tbody>
-            
-        </tbody>
-    </table>
-</div>
+<head>
+<link rel="stylesheet" href="../css/listagem.css"> 
+</head>
+<body>
+    <div class="layout"></div>
+    <div class="topbar">    
+            <a href="../html/index.html" ><img src="../imagens/logo.png" class="logo"></a>
+    </div>
+
+    <div class="Meio">
+        <h1>Listagem de Usuários</h1>
+        <table class="tabela" border="1">
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Email</th>
+                    <th>Data Nascimento</th>
+                    <th>Senha</th>
+                    <th>Editar</th>
+                </tr>
+            </thead>
+            <tbody>
+                <?php
+                    $con = new mysqli("localhost", "root", "", "loja");
+
+                    $dad = $con->query("SELECT * FROM loja.usuarios order by nome");
+
+                    while ($linha = $dad->fetch_object()){
+                        echo "<tr>\n";
+                        echo "<td>" . $linha->nome . "</td>\n";
+                        echo "<td>" . $linha->email . "</td>\n";
+                        echo "<td>" . $linha->data_nascimento . "</td>\n";
+                        echo "<td>" . $linha->senha . "</td>\n";
+                        echo "<td>\n";
+                        echo "<a href='editar.php?id=$linha->id'>Editar</a>";
+                    }
+
+                    $con->close();
+                ?>
+            </tbody>
+        </table>
+    </div> 
+</body>
+

@@ -7,12 +7,24 @@ $senha = $_POST["senha"];
 
 $con = new mysqli("localhost", "root", "", "loja");
 
-$con->query("insert into usuarios(nome,email,data_nascimento,senha) values ('$nome','$email','$data','$senha');");
+$con->query("insert into usuarios(nome,email,data_nascimento,senha) values ('$nome','$email','$data','$senha')");
 
 $con->close();
 
-echo "usuario criado como sucessso";
-
-
  ?>
+
+<link rel="stylesheet" href="../css/salvar.css">
+<div class="layout"></div>
+<div class="topbar">    
+        <a href="../html/index.html" ><img src="../imagens/logo.png" class="logo"></a>
+</div>
+
+<div class="Meio">
+    <div class="msg">
+        <div class="choice">
+            <h1>Usuário Registrado</h1>
+            <a href="../php/listagem.php">Conferir</a>
+        </div>
+    </div>
+</div>
 
