@@ -49,12 +49,13 @@ body {
     width: 500px;
     align-items: center;
     text-align: center;  
-    border-radius: 10px;
+    border-radius: 20px;
+    border: 5px solid #abc0d4;
 }
 
 .Meio .choice h1{
-    color: #fff;
-    border: 2px solid #fff;
+    color: #D9a443;
+    border-bottom: 5px solid #abc0d4;
     padding: 10px;
     margin-top: -0%;
     
@@ -73,6 +74,10 @@ body {
     border-radius: 20px;
     font-family:Arial, Helvetica, sans-serif;
     transition: 0.2s;
+}
 
-    
+.Meio a:hover{
+    background-color: black;
+    width: 112px;
+    border-radius: 30px;
 }

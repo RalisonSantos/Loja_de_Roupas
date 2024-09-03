@@ -10,7 +10,7 @@
         $id = $linha->id;
         $nome = $linha->nome;
         $email = $linhs->email;
-        $datanascimento = $linha-> data_nascimento;
+        $data = $linha-> data_nascimento;
         $senha = $linhs-> senha;
     }
 
@@ -46,8 +46,8 @@
             <label for="senha">Senha</label>
             <input type="password" placeholder="Digite sua senha" name="senha" id="senha" value="<?=$senha?>"/>
 
-            <label for="datanascimento">Data de Nascimento</label>
-            <input type="date" placeholder="Data de Nascimento" autofocus="true" id="datanascimento" name="datanascimento" value="<?=$datanascimento?>" />
+            <label for="data">Data de Nascimento</label>
+            <input type="date" placeholder="Data de Nascimento" autofocus="true" id="data" name="data" value="<?=$data?>" />
 
             <input type="submit" value="Criar uma conta" class="btn" />
 

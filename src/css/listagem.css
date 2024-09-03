@@ -30,22 +30,23 @@ body {
     height: 100vh;
     background-color: #082126;
     position: relative;
+    text-align: center;
     
 }
 
 .Meio h1{
     color: #fff;
-    margin-left: 42%;
-    margin-top: 5%;
+
 }
 
 .tabela{
+    align-items: center;
     background-color: #fff;
     align-items: center;
     justify-content: center;
     top: 10%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, 0%);
     position: absolute;
     font-size: 30px;
 }
@@ -54,11 +55,12 @@ body {
     color: #fff;
     background-color: black;
     width: 100px;
-    padding: 10px;
+    padding: 5px;
     display: flex;
-    flex-direction: column;
     margin: 0 auto;
     border-radius: 20px;
     font-family:Arial, Helvetica, sans-serif;
+    align-items: center;
     text-align: center;
+    justify-content: center;
 }

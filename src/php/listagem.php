@@ -33,6 +33,9 @@
                         echo "<td>" . $linha->senha . "</td>\n";
                         echo "<td>\n";
                         echo "<a href='editar.php?id=$linha->id'>Editar</a>";
+                        echo "<a href='excluir.php?id=$linha->id'>Excluir</a>";
+                        echo "</td>\n";
+                        echo "</tr>\n";
                     }
 
                     $con->close();
