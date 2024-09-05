@@ -39,28 +39,40 @@ body {
 
 }
 
+table{
+    border-radius: 10px;
+}
+
 .tabela{
     align-items: center;
-    background-color: #fff;
+    background-color: #fcae20;
     align-items: center;
     justify-content: center;
     top: 10%;
     left: 50%;
     transform: translate(-50%, 0%);
     position: absolute;
-    font-size: 30px;
+    font-size: 40px;
 }
+
+.tabela tr th{
+    color: #fff;
+    
+}
+
 .tabela a{
     text-decoration: none;
     color: #fff;
-    background-color: black;
-    width: 100px;
-    padding: 5px;
+    background-color: #082626;
+    width: 105px;
+    padding: 2px;
+    font-size: 30px;
     display: flex;
     margin: 0 auto;
-    border-radius: 20px;
+    border-radius: 10px;
     font-family:Arial, Helvetica, sans-serif;
     align-items: center;
     text-align: center;
     justify-content: center;
+    margin-top: 2px;
 }

@@ -8,7 +8,7 @@
     </div>
 
     <div class="Meio">
-        <h1>Listagem de Usuários</h1>
+        <h1>Usuários Logados</h1>
         <table class="tabela" border="1">
             <thead>
                 <tr>
@@ -16,7 +16,7 @@
                     <th>Email</th>
                     <th>Data Nascimento</th>
                     <th>Senha</th>
-                    <th>Editar</th>
+                    <th>Opções</th>
                 </tr>
             </thead>
             <tbody>
