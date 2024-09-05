@@ -24,7 +24,7 @@ $con->close();
         <div class="choice">
             <h1>Usuário Registrado</h1>
             <a href="../php/listagem.php">Conferir</a>
-        </div>
+        </div>f
     </div>
 </div>
 

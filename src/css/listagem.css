@@ -36,23 +36,31 @@ body {
 
 .Meio h1{
     color: #fff;
-
 }
 
 table{
-    border-radius: 10px;
+    background-color: #2e6252;
+    border-radius: 5px;
+    border: 4px solid #437365;
 }
 
-.tabela{
-    align-items: center;
-    background-color: #fcae20;
+table td{
+    color: #ebebeb;
+    background-color: #2e625e;
+}
+
+table tr th{
+    background-color: #437365;
+}
+
+.tabela {
     align-items: center;
     justify-content: center;
     top: 10%;
     left: 50%;
     transform: translate(-50%, 0%);
     position: absolute;
-    font-size: 40px;
+    font-size: 32px;
 }
 
 .tabela tr th{
@@ -63,10 +71,10 @@ table{
 .tabela a{
     text-decoration: none;
     color: #fff;
-    background-color: #082626;
+    background-color: #D9a443;
     width: 105px;
     padding: 2px;
-    font-size: 30px;
+    font-size: 25px;
     display: flex;
     margin: 0 auto;
     border-radius: 10px;
@@ -76,3 +84,4 @@ table{
     justify-content: center;
     margin-top: 2px;
 }
+

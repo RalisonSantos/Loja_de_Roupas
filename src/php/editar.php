@@ -3,20 +3,19 @@
 
     $con = new mysqli("localhost", "root", "", "loja");
 
-    $dad = $con->query("SELECT * FROM loja.usuarios order by nome");
+    $dad = $con->query("select * from usuarios where id = $id");
 
     if($linha = $dad->fetch_object()){
 
         $id = $linha->id;
         $nome = $linha->nome;
-        $email = $linhs->email;
+        $email = $linha->email;
         $data = $linha-> data_nascimento;
-        $senha = $linhs-> senha;
+        $senha = $linha-> senha;
     }
 
     $con->close();
 ?>
-
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -54,5 +53,4 @@
         </form>
     </div>
 </body>
-
 </html>

@@ -2,7 +2,7 @@
     $id = $_POST["id"];
     $nome = $_POST["nome"];
     $email = $_POST["email"];
-    $data = $_POST["datanascimento"];
+    $data = $_POST["data"];
     $senha = $_POST["senha"];
 
     $con = new mysqli("localhost", "root", "", "loja");

@@ -9,7 +9,7 @@
 
     <div class="Meio">
         <h1>Usuários Logados</h1>
-        <table class="tabela" border="1">
+        <table class="tabela">
             <thead>
                 <tr>
                     <th>Nome</th>
@@ -42,6 +42,7 @@
                 ?>
             </tbody>
         </table>
+
     </div> 
 </body>
 
