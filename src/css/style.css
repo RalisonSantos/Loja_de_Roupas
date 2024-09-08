@@ -104,10 +104,10 @@ body {
     width: 100%;
 }
 
-.Meio .mtxt{
+.Meio .mtxt h3{
     text-align: center;
     font-family: Arial;
-    font-size: 13px;
+    font-size: 18px;
     color: #fff;
     margin-top: 25px;
 }
@@ -125,6 +125,36 @@ body {
     border-radius: 20px;
     font-family: Arial;
 }
+
+.Meio .mtxt2 h1{
+    text-align: center;
+    font-family: fonte_txths;
+    font-size: 40px;
+    color: #fff;
+    margin-top: 25px;
+}
+
+.Meio .mtxt2 h3{
+    text-align: center;
+    font-family: Arial;
+    font-size: 18px;
+    color: #fff;
+}
+
+.Meio .mbtn2{
+    text-align: center;
+    margin-top: 30px;
+}
+
+.mbtn2 a{
+    text-decoration: none;
+    color: white;
+    background-color: #D9a443;
+    padding: 15px;
+    border-radius: 20px;
+    font-family: Arial;
+}
+
 
 .slide{
     margin: auto;

@@ -17,6 +17,7 @@
                     <th>Data Nascimento</th>
                     <th>Senha</th>
                     <th>Opções</th>
+                    <th><a href="../html/entrar.html">Voltar</a></th>
                 </tr>
             </thead>
             <tbody>
@@ -42,10 +43,6 @@
                 ?>
             </tbody>
         </table>
-
-        <div class="mbtn">
-            <a href="#">Registra-se</a>
-        </div>
     </div> 
 </body>
 

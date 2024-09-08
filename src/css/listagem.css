@@ -39,21 +39,6 @@ body {
     color: #fff;
 }
 
-.mbtn{
-    position: absolute;
-    margin-top: 20%;
-    left: 50%;
-}
-
-.mbtn a{
-    text-decoration: none;
-    color: white;
-    background-color: #D9a443;
-    padding: 15px;
-    border-radius: 20px;
-    font-family: Arial;
-}
-
 table{
     background-color: #2e6252;
     border-radius: 5px;
