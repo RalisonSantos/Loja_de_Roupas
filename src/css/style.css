@@ -125,3 +125,56 @@ body {
     border-radius: 20px;
     font-family: Arial;
 }
+
+.slide{
+    margin: auto;
+    margin-top: 100px;
+    overflow-x: hidden;
+    width: 100vw;
+    border-radius: 10px;
+    scroll-behavior: smooth;
+}
+
+.slider{
+    position: relative;
+}
+
+.conteudo {
+    display: flex;
+    width: fit-content;
+    
+}
+
+.conteudo img{
+    width: 100vw;
+    height: 500px;
+    object-fit: cover;
+
+}
+
+button{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: none;
+    background-color: #D9a443;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    cursor: pointer;
+
+}
+
+button:first-of-type{
+    left: 0;
+    transform: translate(63%,-50%);
+}
+
+button:last-of-type{
+    right: 0;
+    transform: translate(-50%,-50%);
+}
+
+button:hover{
+    background-color: #d89924;
+}

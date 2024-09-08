@@ -43,6 +43,9 @@
             </tbody>
         </table>
 
+        <div class="mbtn">
+            <a href="#">Registra-se</a>
+        </div>
     </div> 
 </body>
 

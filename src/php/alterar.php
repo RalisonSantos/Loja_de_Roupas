@@ -10,6 +10,19 @@
     $con->query("update loja.usuarios set nome = '$nome', email = '$email', data_nascimento = '$data', senha = '$senha' where id = $id");
 
     $con->close();
-
-    echo "alterado com sucesso!";
 ?>
+
+<link rel="stylesheet" href="../css/mensagem.css">
+<div class="layout"></div>
+<div class="topbar">    
+        <a href="../html/index.html" ><img src="../imagens/logo.png" class="logo"></a>
+</div>
+
+<div class="Meio">
+    <div class="msg">
+        <div class="choice">
+            <h1>Usuário Alterado</h1>
+            <a href="../php/listagem.php">Voltar</a>
+        </div>
+    </div>
+</div>
