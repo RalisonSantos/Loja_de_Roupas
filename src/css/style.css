@@ -63,13 +63,6 @@ body {
     align-items: center;
 }
 
-.topbar .toplogin{
-    text-decoration: none;
-    color: #D9a443;
-    
-    font-family: fonte_topnav;
-}
-
 .topbar nav a::after{
     content: "";
     width: 0%;
@@ -119,11 +112,16 @@ body {
 
 .mbtn a{
     text-decoration: none;
-    color: white;
-    background-color: #D9a443;
+    color: #fff;
+    background-color: #5b8a72;
     padding: 15px;
     border-radius: 20px;
     font-family: Arial;
+}
+
+.mbtn a:hover{
+    color: white;
+    background-color: #38684f;
 }
 
 .Meio .mtxt2 h1{
@@ -149,10 +147,15 @@ body {
 .mbtn2 a{
     text-decoration: none;
     color: white;
-    background-color: #D9a443;
+    background-color: #5b8a72;
     padding: 15px;
     border-radius: 20px;
     font-family: Arial;
+}
+
+.mbtn2 a:hover{
+    color: white;
+    background-color: #38684f;
 }
 
 
@@ -187,7 +190,7 @@ button{
     height: 60px;
     border-radius: 50%;
     border: none;
-    background-color: #D9a443;
+    background-color: #5b8a72;
     color: #fff;
     position: absolute;
     top: 50%;
@@ -206,5 +209,5 @@ button:last-of-type{
 }
 
 button:hover{
-    background-color: #d89924;
+    background-color: #467c60;
 }
