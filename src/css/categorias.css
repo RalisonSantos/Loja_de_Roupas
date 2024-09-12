@@ -1,0 +1,82 @@
+@font-face {
+    font-family: fonte_txths;
+    src: url(../fontes/textoh/LEMONMILK-Bold.otf);
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+    background-color: #082126;
+    margin: 0;
+    
+}
+
+.layout {
+    background-color: #082126;
+}
+
+.topbar2 {
+    display: flex;
+    padding: 20px;
+    height: 32px;
+    font-size: 17px;
+    background-color: #082626;
+    align-items: center; 
+
+}
+
+.topbar2 img {
+    height: 65px;
+    
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin-top: 100px; 
+}
+
+.item {
+    text-align: center;
+    
+}
+
+.item img {
+    width: 380px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.item h3 {
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+button {
+    background-color: #ddae58;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover{
+    background-color: #c79b4d;
+}
+
+.nossos {
+    color: #ddae58;
+    font-family: fonte_txths;
+    text-align: center;
+    font-size: 30px;
+
+}
+
+
+

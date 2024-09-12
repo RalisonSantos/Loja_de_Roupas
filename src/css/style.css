@@ -170,6 +170,7 @@ body {
 
 .slider{
     position: relative;
+    margin-top: 100px;
 }
 
 .conteudo {
@@ -210,4 +211,53 @@ button:last-of-type{
 
 button:hover{
     background-color: #467c60;
+}
+
+.card-list{
+    margin-top: 200px;
+    display: flex;
+}
+
+.card-list .card-item{
+    color: #fff;
+    width: 500px;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: #c0bdbd;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid red;
+    margin: auto;
+}
+
+.card-list .card-item .img-camisa{
+    width: 440px;
+    height: 440px;
+    border-radius: 20px;
+    border: 3px solid fuchsia;
+    padding: 4px;
+}
+
+.card-list .card-item h2{
+    color: #fff;
+    font-size: 30px;
+    font-family: fonte_txths;
+}
+
+.card-list .card-item .botao{
+    text-decoration: none;
+    width: 60px;
+    text-align: center;
+    color: #fff;
+    background-color: #5b8a72;
+    padding: 12px;
+    border-radius: 19px;
+    transition: 0.1s;
+    font-family: arial;
+}
+
+.card-list .card-item .botao:hover{
+    width: 70px;
 }
