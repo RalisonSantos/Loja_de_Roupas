@@ -32,11 +32,23 @@ body {
     position: relative;
     text-align: center;
     position: relative;
-    
+}
+
+.Meio .mseta{
+    text-decoration: none;
+    font-size: 70px;
+    display: flex;
+    color: #D9a443;
+    margin-left: 30px;
+
 }
 
 .Meio h1{
     color: #fff;
+    display: flex;
+    flex-direction: inline;
+    font-size: 100px;
+    flex-direction: initial;
 }
 
 table{

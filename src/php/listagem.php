@@ -8,7 +8,7 @@
     </div>
 
     <div class="Meio">
-        
+        <a href="#" class="mseta">&#129044;</a>
         <h1>Usuários Logados</h1>
         <table class="tabela">
             <thead>
@@ -22,6 +22,9 @@
             </thead>
             <tbody>
                 <?php
+                    $senha = $_POST["senha"];
+                    
+
                     $con = new mysqli("localhost", "root", "", "loja");
 
                     $dad = $con->query("SELECT * FROM loja.usuarios order by nome");
@@ -31,7 +34,7 @@
                         echo "<td>" . $linha->nome . "</td>\n";
                         echo "<td>" . $linha->email . "</td>\n";
                         echo "<td>" . $linha->data_nascimento . "</td>\n";
-                        echo "<td>" . $linha->senha . "</td>\n";
+                        echo "<td>" . md5($senha)  . "</td>\n";
                         echo "<td>\n";
                         echo "<a href='editar.php?id=$linha->id'>Editar</a>";
                         echo "<a href='excluir.php?id=$linha->id'>Excluir</a>";

@@ -55,8 +55,8 @@ CREATE TABLE IF NOT EXISTS `loja`.`vendas` (
   `total` DECIMAL(10,5) NOT NULL,
   `data_cadastro` DATETIME NULL,
   PRIMARY KEY (`id`),
-  INDEX `fk_vendas_usuarios1_idx` (`usuario` ASC) VISIBLE,
-  UNIQUE INDEX `usuario_UNIQUE` (`usuario` ASC) VISIBLE,
+  INDEX `fk_vendas_usuarios1_idx` (`usuario` ASC)  ,
+  UNIQUE INDEX `usuario_UNIQUE` (`usuario` ASC)  ,
   CONSTRAINT `fk_vendas_usuarios1`
     FOREIGN KEY (`usuario`)
     REFERENCES `loja`.`usuarios` (`id`)
@@ -73,8 +73,8 @@ CREATE TABLE IF NOT EXISTS `loja`.`itens_vendas` (
   `venda` INT NOT NULL,
   `quantidade` INT NULL,
   PRIMARY KEY (`produto`, `venda`),
-  INDEX `fk_produtos_has_vendas_vendas1_idx` (`venda` ASC) VISIBLE,
-  INDEX `fk_produtos_has_vendas_produtos1_idx` (`produto` ASC) VISIBLE,
+  INDEX `fk_produtos_has_vendas_vendas1_idx` (`venda` ASC)  ,
+  INDEX `fk_produtos_has_vendas_produtos1_idx` (`produto` ASC)  ,
   CONSTRAINT `fk_produtos_has_vendas_produtos1`
     FOREIGN KEY (`produto`)
     REFERENCES `loja`.`produtos` (`id`)
@@ -105,7 +105,7 @@ CREATE TABLE IF NOT EXISTS `loja`.`compras` (
   `id` INT NOT NULL,
   `fornecedor` INT NOT NULL,
   `data_cadastro` DATETIME NULL,
-  INDEX `fk_usuarios_has_fornecedores_fornecedores1_idx` (`fornecedor` ASC) VISIBLE,
+  INDEX `fk_usuarios_has_fornecedores_fornecedores1_idx` (`fornecedor` ASC)  ,
   PRIMARY KEY (`id`),
   CONSTRAINT `fk_usuarios_has_fornecedores_fornecedores1`
     FOREIGN KEY (`fornecedor`)
@@ -123,8 +123,8 @@ CREATE TABLE IF NOT EXISTS `loja`.`itens_compra` (
   `compra` INT NOT NULL,
   `quantidade` INT NOT NULL,
   PRIMARY KEY (`produto`, `compra`),
-  INDEX `fk_produtos_has_compras_fornecedores_compras_fornecedores1_idx` (`compra` ASC) VISIBLE,
-  INDEX `fk_produtos_has_compras_fornecedores_produtos1_idx` (`produto` ASC) VISIBLE,
+  INDEX `fk_produtos_has_compras_fornecedores_compras_fornecedores1_idx` (`compra` ASC)  ,
+  INDEX `fk_produtos_has_compras_fornecedores_produtos1_idx` (`produto` ASC)  ,
   CONSTRAINT `fk_produtos_has_compras_fornecedores_produtos1`
     FOREIGN KEY (`produto`)
     REFERENCES `loja`.`produtos` (`id`)
