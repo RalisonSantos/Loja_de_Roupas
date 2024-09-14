@@ -15,7 +15,7 @@
 <link rel="stylesheet" href="../css/mensagem.css">
 <div class="layout"></div>
 <div class="topbar">    
-        <a href="../html/index.html" ><img src="../imagens/logo.png" class="logo"></a>
+        <a href="../index.html" ><img src="../imagens/logo.png" class="logo"></a>
 </div>
 
 <div class="Meio">
