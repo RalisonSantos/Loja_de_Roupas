@@ -1,7 +1,7 @@
 <?php
     $id =  $_GET["id"];
 
-    $con = new mysqli("localhost", "root", "", "loja");
+    include('C:\xampp\htdocs\Loja_de_Roupas\src\php\conexao.php');
 
     $con->query("delete from usuarios where id =  $id");
 
@@ -9,17 +9,16 @@
 
 ?>
 
-<link rel="stylesheet" href="../css/mensagem.css">
-<div class="layout"></div>
+<link rel="stylesheet" href="../../css/mensagem.css">
 <div class="topbar">    
-        <a href="../index.html" ><img src="../imagens/logo.png" class="logo"></a>
+        <a href="../../index.html" ><img src="../../imagens/logo.png" class="logo"></a>
 </div>
 
 <div class="Meio">
     <div class="msg">
         <div class="choice">
             <h1>Usuário Excluido</h1>
-            <a href="../php/listagem.php">Voltar</a>
+            <a href="../../php/usuario/listagem.php">Voltar</a>
         </div>
     </div>
 </div>
