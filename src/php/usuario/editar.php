@@ -1,8 +1,8 @@
 <?php
     $id = $_GET["id"];
 
-    include('C:\xampp\htdocs\Loja_de_Roupas\src\php\conexao.php');
-
+    $con = new mysqli("localhost", "root", "", "loja");
+    
     $dad = $con->query("select * from usuarios where id = $id");
 
     if($linha = $dad->fetch_object()){

@@ -1,5 +1,5 @@
 <head>
-<link rel="stylesheet" href="../css/listagem.css"> 
+<link rel="stylesheet" href="../../css/listagem.css"> 
 </head>
 <body>
     <div class="topbar">    
@@ -19,7 +19,7 @@
             <tbody>
                 <?php
 
-                    include('C:\xampp\htdocs\Loja_de_Roupas\src\php\conexao.php');
+                    $con = new mysqli("localhost", "root", "", "loja");
 
                     $dad = $con->query("SELECT * FROM loja.usuarios order by nome");
 

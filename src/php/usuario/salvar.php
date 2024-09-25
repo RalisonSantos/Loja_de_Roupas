@@ -1,16 +1,15 @@
 <?php
 
-$nome = $_POST["nome"];
-$email = $_POST["email"];
-$data = $_POST["datanascimento"];
-$senha = md5($_POST["senha"]);
+    $nome = $_POST["nome"];
+    $email = $_POST["email"];
+    $data = $_POST["data"];
+    $senha = md5($_POST["senha"]);
 
+    $con = new mysqli("localhost", "root", "", "loja");
 
-include('C:\xampp\htdocs\Loja_de_Roupas\src\php\conexao.php');
+    $con->query("insert into usuarios(nome,email,data_nascimento,senha) values ('$nome','$email','$data','$senha')");
 
-$con->query("insert into usuarios(nome,email,data_nascimento,senha) values ('$nome','$email','$data','$senha')");
-
-$con->close();
+    $con->close();
 
  ?>
 

@@ -5,8 +5,8 @@
     $data = $_POST["data"];
     $senha = $_POST["senha"];
 
-    include('C:\xampp\htdocs\Loja_de_Roupas\src\php\conexao.php');
-
+    $con = new mysqli("localhost", "root", "", "loja");
+    
     $con->query("update loja.usuarios set nome = '$nome', email = '$email', data_nascimento = '$data', senha = '$senha' where id = $id");
 
     $con->close();

@@ -1,7 +1,7 @@
 <?php
     $id =  $_GET["id"];
 
-    include('C:\xampp\htdocs\Loja_de_Roupas\src\php\conexao.php');
+    $con = new mysqli("localhost", "root", "", "loja");
 
     $con->query("delete from usuarios where id =  $id");
 
