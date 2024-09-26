@@ -5,7 +5,7 @@
     $data = $_POST["data"];
     $senha = md5($_POST["senha"]);
 
-    include('../conexao.php');
+    include(dirname(__DIR__).'/conexao.php');
 
     $con->query("insert into usuarios(nome,email,data_nascimento,senha) values ('$nome','$email','$data','$senha')");
 

@@ -1,7 +1,7 @@
 <?php
     $id =  $_GET["id"];
 
-    include('../conexao.php');
+    include(dirname(__DIR__).'/conexao.php');
 
     $con->query("delete from usuarios where id =  $id");
 
