@@ -19,7 +19,7 @@
 <div class="Meio">
     <div class="msg">
         <div class="choice">
-            <h1>Usuário Alterado</h1>
+            <h1>Fornecedor Alterado</h1>
             <a href="../../php/fornecedor/listagem.php">Voltar</a>
         </div>
     </div>

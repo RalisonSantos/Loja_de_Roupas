@@ -19,7 +19,7 @@ $con->close();
 <div class="Meio">
     <div class="msg">
         <div class="choice">
-            <h1>Usuário Registrado</h1>
+            <h1>Fornecedor Registrado</h1>
             <a href="../../php/fornecedor/listagem.php">Conferir</a>
         </div>
     </div>
