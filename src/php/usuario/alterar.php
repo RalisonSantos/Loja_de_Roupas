@@ -5,7 +5,7 @@
     $data = $_POST["data"];
     $senha = $_POST["senha"];
 
-    $con = new mysqli("localhost", "root", "", "loja");
+    include('../conexao.php');
     
     $con->query("update loja.usuarios set nome = '$nome', email = '$email', data_nascimento = '$data', senha = '$senha' where id = $id");
 

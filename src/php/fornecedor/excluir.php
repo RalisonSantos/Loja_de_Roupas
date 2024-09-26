@@ -2,8 +2,8 @@
     $id =  $_GET["id"];
 
     include('../conexao.php');
-
-    $con->query("delete from usuarios where id =  $id");
+    
+    $con->query("delete from fornecedores where id =  $id");
 
     $con->close();
 
@@ -18,7 +18,7 @@
     <div class="msg">
         <div class="choice">
             <h1>Usuário Excluido</h1>
-            <a href="../../php/usuario/listagem.php">Voltar</a>
+            <a href="../../php/fornecedor/listagem.php">Voltar</a>
         </div>
     </div>
 </div>
