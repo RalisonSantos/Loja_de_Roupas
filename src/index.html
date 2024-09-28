@@ -32,18 +32,28 @@
         <div class="lopcoes" id="lopcoes">
             <nav>
                 <div>
-                    <h2>Usuario</h2>
-                    <a href="../src/html/login.html">Login</a>
-                    <a href="../src/html/registrar.html">Registrar</a>
-                    <a href="../src/php/usuario/listagem.php">Contas</a>
+                    <div class="nome"><h4>Acesso Rápido</h4></div>
+                    <div class="voltar" onclick="listagem_opcoes()">✕</div>
+                    <h4 class="usua" onclick="opcoes_usuario()">Usuário</h4>
+                    <h4 class="usua" onclick="opcoes_fornecedor()">Fornecedor</h4>
                 </div>
-                <div>
-                    <h2>Fornecedor</h2>
-                    <a href="../src/html/login.html">Login</a>
-                    <a href="../src/html/registrar_forcedor.html">Registrar</a>
-                    <a href="../src/php/fornecedor/listagem.php">Contas</a>
-                </div>
-                
+
+            </nav>
+        </div>
+
+        <div class="usuario" id="usuario">
+            <nav>
+                <a href="../src/html/login.html">Login</a>
+                <a href="../src/html/registrar.html">Registrar</a>
+                <a href="../src/php/usuario/listagem.php">Contas</a>
+            </nav>
+        </div>
+
+        <div class="fornecedor" id="fornecedor">
+            <nav>
+                <a href="../src/html/login.html">Login</a>
+                <a href="../src/html/registrar_forcedor.html">Registrar</a>
+                <a href="../src/php/fornecedor/listagem.php">Contas</a>
             </nav>
         </div>
 

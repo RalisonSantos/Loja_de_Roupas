@@ -61,37 +61,99 @@ body {
 
 .lopcoes {
     position: fixed;
+    top: 10px;
     right: -250px;
     width: 250px;
-    height: 390px;
+    height: 305px;
     background-color: #082626;
-    border-bottom-left-radius: 20px;
+    border-radius: 5px;
     color: white;
     transition: right 0.3s;
     z-index: 10px;
-    text-align: center;
 }
 
-.lopcoes h2{
-
+.lopcoes .voltar{
+    transform: translate(200px,-43px);
+    font-size: 23px;
+    color: #D9a443;
+    cursor: pointer;
 }
 
-.lopcoes a{
-    text-decoration: none;
-    color: #fff;
-    background-color: #38684f;
+.lopcoes h4{
+    transform: translate(30px);
+    width: 100px;
+}
+
+.lopcoes .usua{
+    transform: translate(30px, -30px);
+    border: 1px solid #fff;
     padding: 10px;
-    width: 70px;
-    display: flex;
-    flex-direction: column;
-    margin: 0 auto;
-
-    
+    width: 70%;
+    text-align: center;
+    cursor: pointer;
 }
 
 .lopcoes.ativado{
    right: 0;
 }
+
+.usuario{
+    position: fixed;
+    top: 88px;
+    right: -250px;
+    width: 250px;
+    height: 120px;
+    background-color: #38684f;
+    margin-top: 45px;
+    border-radius: 5px;
+    transition: right 0.3s;
+    text-align: center;
+}
+
+.usuario a{
+    padding-bottom: 10px;
+    text-decoration: none;
+    color: #fff;
+    padding: 10px;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+      
+}
+
+.usuario.atv_usuario{
+    right: 0;
+ }
+
+ .fornecedor{
+    position: fixed;
+    top: 150px;
+    right: -250px;
+    width: 250px;
+    height: 120px;
+    background-color: #38684f;
+    margin-top: 45px;
+    border-radius: 5px;
+    transition: right 0.3s;
+    text-align: center;
+}
+
+.fornecedor a{
+    padding-bottom: 10px;
+    text-decoration: none;
+    color: #fff;
+    padding: 10px;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+      
+}
+
+.fornecedor.atv_fornecedor{
+    right: 0;
+ }
 
 .topbar img{
     width: 65px;
