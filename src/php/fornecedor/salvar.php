@@ -3,7 +3,7 @@ $nome = $_POST["nome"];
 $email = $_POST["email"];
 $senha = md5($_POST["senha"]);
 
-include('../conexao.php');
+include(dirname(__DIR__).'/conexao.php');
 
 $con->query("insert into fornecedores(nome,email,senha) values ('$nome','$email','$senha')");
 

@@ -49,12 +49,48 @@ body {
     display: flex;   
 }
 
-.topbar .top2 nav a{
+.topbar .top2 nav .opcoes{
     text-decoration: none;
     color: #D9a443;
     margin-right: 15px;
     font-family: fonte_topnav;
     position: relative;
+    cursor: pointer;
+    font-size: 25px;
+}
+
+.lopcoes {
+    position: fixed;
+    right: -250px;
+    width: 250px;
+    height: 390px;
+    background-color: #082626;
+    border-bottom-left-radius: 20px;
+    color: white;
+    transition: right 0.3s;
+    z-index: 10px;
+    text-align: center;
+}
+
+.lopcoes h2{
+
+}
+
+.lopcoes a{
+    text-decoration: none;
+    color: #fff;
+    background-color: #38684f;
+    padding: 10px;
+    width: 70px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+
+    
+}
+
+.lopcoes.ativado{
+   right: 0;
 }
 
 .topbar img{

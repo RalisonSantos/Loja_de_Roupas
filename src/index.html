@@ -7,6 +7,7 @@
         @import url(../src/css/style.css);
     </style>
     <script src="../src/js/slide.js" defer></script>
+    <script src="../src/js/opcoes.js" defer></script>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 </head>
 
@@ -23,9 +24,27 @@
 
             <div class="top2">
                 <nav>
-                    <a  href="../src/html/entrar.html">Entrar</a>
+                    <div class="opcoes" onclick="listagem_opcoes()">☰</div>
                 </nav>
             </div>
+        </div>
+
+        <div class="lopcoes" id="lopcoes">
+            <nav>
+                <div>
+                    <h2>Usuario</h2>
+                    <a href="../src/html/login.html">Login</a>
+                    <a href="../src/html/registrar.html">Registrar</a>
+                    <a href="../src/php/usuario/listagem.php">Contas</a>
+                </div>
+                <div>
+                    <h2>Fornecedor</h2>
+                    <a href="../src/html/login.html">Login</a>
+                    <a href="../src/html/registrar_forcedor.html">Registrar</a>
+                    <a href="../src/php/fornecedor/listagem.php">Contas</a>
+                </div>
+                
+            </nav>
         </div>
 
         <div class="Meio">
