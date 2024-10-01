@@ -7,10 +7,6 @@ body {
     justify-content: center;
 }
 
-.layout{
-    background-color: #082126;
-}
-
 .topbar{
     padding: 20px;
     display: flex;
@@ -28,7 +24,7 @@ body {
 .Meio {
     width: 100vw;
     height: 100vh;
-    background-color: #082126;
+    background-image: url('../imagens/fundo_de_tela.jpg');
     position: relative;
     
     

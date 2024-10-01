@@ -6,11 +6,6 @@ html, body
     
 }
 
-.layout
-{
-    background-color: #082126;
-}
-
 .topbar 
 {
     background-color: #082626;
@@ -36,10 +31,7 @@ html, body
 
 body {
     font-family: 'Inter', sans-serif;
-    margin: 0;
-    padding: 0;
     color: #fff;
-    background-color: #082126;
 }
 
 .page {
@@ -50,8 +42,7 @@ body {
     justify-content: center;
     width: 100%;
     height: 100%;
-    margin-top: 110px;
-    background-color: #082126;
+    background-image: url('../imagens/fundo_de_tela.jpg');
     position: relative;
 }
 

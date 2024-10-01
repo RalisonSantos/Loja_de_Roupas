@@ -1,15 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.gMDN Referenceoogleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 html, body 
 {
     width: 100vw;
     height: 100vh;
     margin: 0 auto;
-}
-
-.layout
-{
-    background-color: #082126;
 }
 
 .topbar 
@@ -53,7 +48,7 @@ body {
     justify-content: center;
     width: 100%;
     height: 100vh;
-    background-color: #082126;
+    background-image: url('../imagens/fundo_de_tela.jpg');
 }
 
 .formLogin {

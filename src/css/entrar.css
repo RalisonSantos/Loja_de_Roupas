@@ -12,13 +12,8 @@ body {
     margin: 0;
     width: 100vw;
     height: 100vh;
-    background-color: #082126;
     align-items: center;
     justify-content: center;
-}
-
-.layout{
-    background-color: #082126;
 }
 
 .topbar{
@@ -39,15 +34,15 @@ body {
 .Meio {
     width: 100vw;
     height: 100vh;
-    background-color: #082126;
+    background-image: url('../imagens/fundo_de_tela.jpg');
     position: relative;
     
 }
 
-.Meio nav{
+.Meio .alinhamento{
     top: 50%; 
     left: 50%; 
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -60%);
     position: absolute;
     display: flex;
     
@@ -57,29 +52,20 @@ body {
     background-color: #1e3b3b;
     border-radius: 20px;
     height: 350px;
-    width: 200px;
+    width: 500px;
     align-items: center;
     text-align: center;
     margin: 70px;
+    
 }
 
-.Meio .choice02{
-    background-color: #1e3b3b;
-    border-radius: 20px;
-    height: 350px;
-    width: 200px;
-    align-items: center;
-    margin: 70px;
-    text-align: center;
-}
-
-.Meio h2{
+.Meio h3{
     font-family: fonte_txths;
     font-size: 20px;
     color: #fff;
 }
 
-.Meio a{
+.Meio .choice01 a{
     text-decoration: none;
     color: #fff;
     background-color: black;
@@ -93,27 +79,95 @@ body {
     transition: 0.2s;
 }
 
-.Meio a:hover{
+.Meio .choice01 a:hover{
     background-color: black;
     width: 112px;
     border-radius: 30px;
 
 }
 
-.Meio .a01{
-    transform: translate(0px , 10px);
-}
-
-.Meio .a02{
-    transform: translate(0px , 20px);
-}
-
 .Meio #img{
-    
     margin-top: 10px;
     border: 2px solid #D9a443;
     border-radius: 20px;
     padding: 10px;
-    width: 90px;
-    height: 85px;
+    width: 100px;
+    height: 95px;
+}
+
+.Meio .usuario{
+    position: fixed;
+    top: 190px;
+    left: -500px;
+    transform: translate(100px);
+    width: 250px;
+    height: 220px;
+    background-color: #38684f;
+    margin-top: 45px;
+    border-radius: 5px;
+    transition: left 0.3s;
+    text-align: center;
+    border: 2px solid #fff;
+}
+
+.Meio .usuario h2{
+    color: #fff;
+    border-bottom: 1px solid #fff;
+    padding: 4px;
+    
+}
+
+.Meio .usuario a{
+    padding-bottom: 10px;
+    text-decoration: none;
+    color: #fff;
+    padding: 10px;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+      
+}
+
+.usuario.atv_usuario{
+    left: 0;
+
+}
+
+.Meio .fornecedor{
+    position: fixed;
+    top: 190px;
+    right: -500px;
+    transform: translate(-100px);
+    width: 250px;
+    height: 220px;
+    background-color: #38684f;
+    margin-top: 45px;
+    border-radius: 5px;
+    transition: right 0.3s;
+    text-align: center;
+    border: 2px solid #fff;
+}
+
+.Meio .fornecedor h2{
+    color: #fff;
+    border-bottom: 1px solid #fff;
+    padding: 4px;
+    
+}
+
+.Meio .fornecedor a{
+    padding-bottom: 10px;
+    text-decoration: none;
+    color: #fff;
+    padding: 10px;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+      
+}
+
+.fornecedor.atv_fornecedor{
+    right: 0;
 }

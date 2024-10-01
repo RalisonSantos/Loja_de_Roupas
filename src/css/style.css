@@ -87,6 +87,7 @@ body {
 .lopcoes .usua{
     transform: translate(30px, -30px);
     border: 1px solid #fff;
+    border-radius: 4px;
     padding: 10px;
     width: 70%;
     text-align: center;
@@ -284,7 +285,7 @@ body {
 
 }
 
-button{
+.button{
     width: 60px;
     height: 60px;
     border-radius: 50%;
@@ -297,17 +298,17 @@ button{
 
 }
 
-button:first-of-type{
+.button:first-of-type{
     left: 0;
     transform: translate(63%,-50%);
 }
 
-button:last-of-type{
+.button:last-of-type{
     right: 0;
     transform: translate(-50%,-50%);
 }
 
-button:hover{
+.button:hover{
     background-color: #467c60;
 }
 
@@ -358,4 +359,56 @@ button:hover{
 
 .card-list .card-item .botao:hover{
     width: 70px;
+}
+
+.conteiner{
+    margin-top: 100px;
+    max-width: 100vw;
+    width: 100%;
+}
+
+.slider-wrapper {
+    position: relative;
+}
+
+.slider-wrapper .slide-button {
+    height: 50px;
+    width: 50px;
+    top: 50%;
+    color: black;
+    background-color: #fff;
+    cursor: pointer;
+    border-radius: 50%;
+    border: none;
+    position: absolute;
+    outline: none;
+    transform: translateY(-50%);
+    font-size: 2.2rem;
+}
+
+.slider-wrapper .slide-button#prev-slide {
+   left: -20px;
+}
+
+.slider-wrapper .slide-button#next-slide {
+    right: -20px;
+ }
+
+.slider-wrapper .image-list{
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(10, 1fr);
+    font-size: 0;
+    overflow-x: auto;
+    scrollbar-width: none;
+}
+
+.slider-wrapper .image-list::-webkit-scrollbar{
+    display: none;
+}
+
+.slider-wrapper .image-list .image-item{
+    width: 400px;
+    height: 360px;
+    object-fit: cover;
 }
