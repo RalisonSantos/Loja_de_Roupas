@@ -46,10 +46,14 @@ body {
 }
 
 .topbar .top2{
-    display: flex;   
+    display: flex;  
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
-.topbar .top2 nav .opcoes{
+.topbar .top2 nav .opcoes {
+    display: flex;
     text-decoration: none;
     color: #D9a443;
     margin-right: 15px;
@@ -57,6 +61,21 @@ body {
     position: relative;
     cursor: pointer;
     font-size: 25px;
+    transform: translate(0px, 15px);
+}
+
+.topbar .top2 .carteira {
+    display: flex;
+    transform: translate(-80px, -20px);
+}
+
+
+.topbar .top2 .carteira img {
+    width: 33px;
+    height: 33px;
+    color: #D9a443;
+    cursor: pointer;
+
 }
 
 .lopcoes {
@@ -82,7 +101,7 @@ body {
 }
 
 .lopcoes{
-    transform: translate(-20px, 10px);
+    transform: translate(-20px, 5px);
 }
 
 
@@ -92,7 +111,7 @@ body {
     font-size: 18px;
 }
 
-.lopcoes .usua{
+.lopcoes .op{
     transform: translate(25px, -30px);
     border: 2px solid #D9a443;
     border-radius: 4px;
@@ -180,7 +199,7 @@ body {
     align-items: center;
 }
 
-.topbar nav a::after{
+.topbar .top1 a::after{
     content: "";
     width: 0%;
     height: 3px;
@@ -191,7 +210,7 @@ body {
     transition: 0.5s;
 }
 
-.topbar nav a:hover::after{
+.topbar .top1 a:hover::after{
     width: 100%;
 }
 

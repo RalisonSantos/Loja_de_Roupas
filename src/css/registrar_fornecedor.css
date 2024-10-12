@@ -42,7 +42,9 @@ body {
     justify-content: center;
     width: 100%;
     height: 100%;
-    background-image: url('../imagens/fundo_de_tela.jpg');
+    background-image: url('../imagens/background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
     position: relative;
 }
 

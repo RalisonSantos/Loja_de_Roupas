@@ -2,7 +2,9 @@ html, body
 {
     width: 100vw;
     height: 100vh;
-    background-image: url('../imagens/fundo_de_tela.jpg');
+    background-image: url('../imagens/background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
     margin: 0 auto;
 }
 
