@@ -1,13 +1,10 @@
 <?php
 
     $nome = $_POST["nome"];
-    $email = $_POST["email"];
-    $data = $_POST["data"];
-    $senha = password_hash($_POST["senha"], PASSWORD_DEFAULT);
 
     include(dirname(__DIR__).'/conexao.php');
 
-    $con->query("insert into usuarios(nome,email,data_nascimento,senha) values ('$nome','$email','$data','$senha')");
+    $con->query("insert into categorias(nome) values ('$nome')");
 
     $con->close();
 
@@ -21,8 +18,8 @@
 <div class="Meio">
     <div class="msg">
         <div class="choice">
-            <h1>Usuário Registrado</h1>
-            <a href="../../php/usuario/listagem.php">Conferir</a>
+            <h1>Categoria Registrada</h1>
+            <a href="../../php/categoria/listagem.php">Conferir</a>
         </div>
     </div>
 </div>

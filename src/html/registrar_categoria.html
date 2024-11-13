@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Registrar</title>
+    <link rel="stylesheet" href="../css/registrar.css">
+</head>
+
+<body>
+    <div class="layout">
+        <div class="topbar">
+            <a href="../index.html"><img src="../imagens/logo.png" class="logo" /></a>
+        </div>
+
+        <div class="page">
+            <form method="POST" action="../php/categoria/salvar.php" class="formRegistrar">
+            
+                <h1>Registrar</h1>
+                <p>Digite o nome da categoria no campo abaixo.</p>
+
+                <label for="nome">Nome</label>
+                <input type="text" placeholder="Digite o Nome da categoria" autofocus="true" id="nome" name="nome" /><br>
+
+                <input type="submit" value="Registrar categoria" class="btn" />
+
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

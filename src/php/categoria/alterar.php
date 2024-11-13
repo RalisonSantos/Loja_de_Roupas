@@ -1,17 +1,13 @@
 <?php
-
+    $id = $_POST["id"];
     $nome = $_POST["nome"];
-    $email = $_POST["email"];
-    $data = $_POST["data"];
-    $senha = password_hash($_POST["senha"], PASSWORD_DEFAULT);
 
     include(dirname(__DIR__).'/conexao.php');
-
-    $con->query("insert into usuarios(nome,email,data_nascimento,senha) values ('$nome','$email','$data','$senha')");
+    
+    $con->query("update categorias set nome = '$nome' where id = $id");
 
     $con->close();
-
- ?>
+?>
 
 <link rel="stylesheet" href="../../css/mensagem.css">
 <div class="topbar">    
@@ -21,9 +17,8 @@
 <div class="Meio">
     <div class="msg">
         <div class="choice">
-            <h1>Usuário Registrado</h1>
-            <a href="../../php/usuario/listagem.php">Conferir</a>
+            <h1>Categoria Alterada</h1>
+            <a href="../../php/categoria/listagem.php">Conferir</a>
         </div>
     </div>
 </div>
-

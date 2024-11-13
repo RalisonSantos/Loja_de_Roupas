@@ -9,3 +9,8 @@ function opcoes_usuario() {
 function opcoes_fornecedor() {
     document.getElementById("fornecedor").classList.toggle("atv_fornecedor");
 }
+
+function listagem_tlfornecedor() {
+    document.getElementById("lopcoes02").classList.toggle("ativado02");
+}
+

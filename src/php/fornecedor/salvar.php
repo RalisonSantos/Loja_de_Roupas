@@ -1,7 +1,7 @@
 <?php
 $nome = $_POST["nome"];
 $email = $_POST["email"];
-$senha = md5($_POST["senha"]);
+$senha = password_hash($_POST["senha"], PASSWORD_DEFAULT);
 
 include(dirname(__DIR__).'/conexao.php');
 

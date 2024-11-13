@@ -1,3 +1,9 @@
+<?php
+
+include('../php/login_fornecedor/protetion.php');
+
+?>
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -39,6 +45,8 @@
                     <a href="../php/fornecedor/listagem.php">Contas</a>
                 </nav>
             </div>
+
+            <a href="../php/login_fornecedor/logout.php">Sair</a>
     </div>
     
 </body>
