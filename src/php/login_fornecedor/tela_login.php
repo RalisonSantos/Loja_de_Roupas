@@ -1,9 +1,7 @@
 <?php
-    $id = $_GET["id"];
-
     include(dirname(__DIR__).'/conexao/conexao.php');
 
-    $dad = $con->query("select * from fornecedores where id = '$id'");
+    $dad = $con->query("select * from fornecedores where id");
 
     if($linhaa = $dad->fetch_object()){
 
