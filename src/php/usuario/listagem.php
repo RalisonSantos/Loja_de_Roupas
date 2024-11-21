@@ -16,7 +16,7 @@
         <div class="navegacao">
             <ul>
                 <li class="lista ativado">
-                    <a href="../login_fornecedor/tela_login.php">
+                    <a href="../login_usuario/tela_login.php">
                         <span class="icon"><ion-icon name="arrow-back-outline"></ion-icon></span>
                         <span class="titulo">Voltar</span>
                     </a>
