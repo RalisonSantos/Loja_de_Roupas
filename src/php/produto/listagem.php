@@ -1,17 +1,39 @@
+<?php
+    include(dirname(__DIR__).'/login_fornecedor/protetion.php');
+?>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<link rel="stylesheet" href="../../css/listagem.css"> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="../js/navbar.js" defer></script>
+    <link rel="stylesheet" href="../../css/listagem.css">
+    <title>F&L Style</title>
 </head>
 <body>
-    <div class="topbar">    
-            <a href="../../index.html" ><img src="../../imagens/logo.png" class="logo"></a>
+<div class="topbar">
+        <a href="../../index.html"><img src="../../imagens/logo3.png" class="iclogo"/></a>
+        <span class="top1"></span>
+        <div class="navegacao">
+            <ul>
+                <li class="lista ativado">
+                    <a href="../fornecedor/tela_inicial_fornecedor.php">
+                        <span class="icon"><ion-icon name="arrow-back-outline"></ion-icon></span>
+                        <span class="titulo">Voltar</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
     </div>
 
     <div class="Meio">
         <table class="tabela">
             <thead>
                 <tr>
+                    <th>Preview</th>
                     <th>Nome</th>
-                    <th>Modelo</th>
                     <th>Categoria</th>
                     <th>Tamanho</th>
                     <th>Preco</th>
@@ -23,15 +45,18 @@
             <tbody>
                 <?php
 
-                    include(dirname(__DIR__).'/conexao.php');
+                    include(dirname(__DIR__).'/conexao/conexao.php');
+                 
 
                     $dad = $con->query("select p.*,c.nome as nome_categoria from produtos as p inner join 
                     categorias as c on p.categorias = c.id order by descricao");
 
                     while ($linha = $dad->fetch_object()){
                         echo "<tr>\n";
+                        echo "<td>";
+                        echo "<img height='100' width='100' src='$linha->caminho' >";
+                        echo "</td>\n";
                         echo "<td>" . $linha->nome . "</td>\n";
-                        echo "<td>" . $linha->modelo . "</td>\n";
                         echo "<td>";
                         echo "<a href='../categoria/editar.php?id=$linha->categorias'>";
                         echo $linha->nome_categoria;

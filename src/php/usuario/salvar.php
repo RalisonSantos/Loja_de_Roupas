@@ -1,16 +1,13 @@
 <?php
-
     $nome = $_POST["nome"];
     $email = $_POST["email"];
     $data = $_POST["data"];
     $senha = password_hash($_POST["senha"], PASSWORD_DEFAULT);
 
-    include(dirname(__DIR__).'/conexao.php');
+    include(dirname(__DIR__).'/conexao/conexao.php');
 
-    $con->query("insert into usuarios(nome,email,data_nascimento,senha) values ('$nome','$email','$data','$senha')");
-
+    $con->query("insert into loja.usuarios(nome,email,data_nascimento,senha) values ('$nome','$email','$data','$senha')");
     $con->close();
-
  ?>
 
 <link rel="stylesheet" href="../../css/mensagem.css">

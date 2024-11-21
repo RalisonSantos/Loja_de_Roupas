@@ -12,14 +12,14 @@ body {
     margin: 0;
     width: 100vw;
     height: 100vh;
+    background-color: #082126;
     align-items: center;
     justify-content: center;
-}
-
-.layout{
-    width: 100vw;
-    height: 100vh;
-    background-color: #2f4858;
+    overflow-x: hidden;
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #ebecf1;
 }
 
 .topbar{
@@ -46,32 +46,9 @@ body {
     
 }
 
-.topbar .top1 nav a{
-    text-decoration: none;
-    color: #fff;
-    margin: 15px;
-    font-family: fonte_topnav;
-    position: relative;
-}
-
-.topbar .top1 a::after{
-    content: "";
-    width: 0%;
-    height: 3px;
-    background-color: #D9a443;
-    position: absolute;
-    bottom: -6px;
-    left: 0;
-    transition: 0.5s;
-}
-
-.topbar .top1 a:hover::after{
-    width: 100%;
-}
-
 .navegacao{
     position: relative;
-    width: 90px;
+    width: 100px;
     height: 90px;
     background: transparent;
     overflow: hidden;
@@ -82,9 +59,7 @@ body {
 
 .navegacao:hover{
     width: 300px;
-    height: 450px;
-    margin-top: 26.8%;
-    background: #05191D;
+    height: 95px;
 }
 
 .navegacao ul{
@@ -107,7 +82,7 @@ body {
     text-decoration: none;
     width: 100%;
     color: #fff;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 }
 
 .navegacao ul li a .icon{
@@ -134,4 +109,49 @@ body {
 
 .navegacao ul li.ativado{
     background-color: #D9a443;
+}
+
+.erro{
+    background-color: #33658a;
+    width: 700px;
+    height: 400px;
+    margin: 0 auto;
+    transform: translate(0px , 40px);
+    border-radius: 10px;
+
+}
+
+.erro .mensagem{
+    border-radius: 10px;
+    width: 600px;
+    height: 300px;
+    transform: translate(0px , 50px);
+    margin: 0 auto;
+    align-items: center;
+    text-align: center;
+    background-color: #2f4858;
+}
+
+.erro .mensagem h2{
+    color: #ebecf1;
+    font-size: 30px;
+    position: relative;
+}
+
+.erro .mensagem h2::after{
+    position: absolute;
+    content: " ";
+    color: #D9a443;
+    width: 420px;
+    height: 3px;
+    background-color: #D9a443;
+    bottom: -6px;
+    left: 0;
+    transform: translate(90px);
+}
+
+
+.erro .mensagem p{
+    color: #ebecf1;
+    font-size: 18px;
 }

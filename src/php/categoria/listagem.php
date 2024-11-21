@@ -2,9 +2,20 @@
 <link rel="stylesheet" href="../../css/listagem.css"> 
 </head>
 <body>
-    <div class="topbar">    
-            <a href="../../index.html" ><img src="../../imagens/logo.png" class="logo"></a>
-    </div>
+<div class="topbar">
+            <a href="../../index.html"><img src="../../imagens/logo3.png" class="iclogo"/></a>
+            <span class="top1"></span>
+            <div class="navegacao">
+                <ul>
+                    <li class="lista ativado">
+                        <a href="../fornecedor/tela_inicial_fornecedor.php">
+                            <span class="icon"><ion-icon name="arrow-back-outline"></ion-icon></span>
+                            <span class="titulo">Voltar</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
 
     <div class="Meio">
         <table class="tabela">
@@ -17,7 +28,7 @@
             <tbody>
                 <?php
 
-                    include(dirname(__DIR__).'/conexao.php');
+                    include(dirname(__DIR__).'/conexao/conexao.php');
 
                     $dad = $con->query("SELECT * FROM loja.categorias order by nome");
 

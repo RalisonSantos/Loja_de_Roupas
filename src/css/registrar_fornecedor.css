@@ -1,37 +1,118 @@
-html, body 
-{
-    width: 100vw;
-    height: 100vh;
-    margin: 0 auto;
-    
+@font-face{
+    font-family: fonte_topnav;
+    src: url("../fontes/barra_de_navegacao/Sansita-Regular.ttf");
 }
 
-.topbar 
-{
-    background-color: #082626;
-    height: 20px;
-    padding: 15px;
-    display: flex;
-    align-items: center;
-
-}
-
-.lgnome 
-{
-    color: #D9a443;
-    font-family: fonte_quartenaria;
-
-}
-
-.logo
-{
-    height: 60px;
-
+@font-face {
+    font-family: fonte_txths;
+    src: url(../fontes/textoh/LEMONMILK-Bold.otf);
 }
 
 body {
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #082126;
+    align-items: center;
+    justify-content: center;
+    overflow-x: hidden;
     font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #ebecf1;
+}
+
+.layout{
+    width: 100vw;
+    height: 100vh;
+}
+
+.topbar{
+    padding: 20px;
+    display: flex;
+    height: 32px;
+    font-size: 17px;
+    background-color: #05191D;
+    align-items: center;
+    
+}
+
+.topbar .iclogo{
+    width: 50px;
+    height: 50px;
+    align-items: center;
+    object-fit: cover;
+    transform: translate(5px);
+}
+
+.topbar .top1{
+    display: flex;
+    margin: 0 auto;
+    
+}
+.navegacao{
+    position: relative;
+    width: 100px;
+    height: 90px;
+    background: transparent;
+    overflow: hidden;
+    transform: translate(20px);
+    transition: 0.5s;
+    border-bottom-left-radius: 30px;
+}
+
+.navegacao:hover{
+    width: 300px;
+    height: 95px;
+}
+
+.navegacao ul{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 70%;
+}
+
+.navegacao ul li{
+    position: relative;
+    list-style: none;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.navegacao ul li a{
+    position: relative;
+    display: flex;
+    text-decoration: none;
+    width: 100%;
     color: #fff;
+    margin-bottom: 15px;
+}
+
+.navegacao ul li a .icon{
+    position: relative;
+    display: block;
+    min-width: 60px;
+    height: 60px;
+    text-align: center;
+    line-height: 70px;
+}
+
+.navegacao ul li a .icon ion-icon{
+    position: relative;
+    font-size: 1.5rem;
+    z-index: 1;
+}
+.navegacao ul li .titulo{
+    position: relative;
+    display: block;
+    height: 60px;
+    line-height: 60px;
+    white-space: nowrap;
+}
+
+.navegacao ul li.ativado{
+    background-color: #D9a443;
 }
 
 .page {
@@ -41,23 +122,21 @@ body {
     align-content: center;
     justify-content: center;
     width: 100%;
-    height: 100%;
-    background-image: url('../imagens/background.jpg');
-    background-size: cover;
+    height: 100vh;
+    background-color: #082126;
     background-repeat: no-repeat;
-    position: relative;
+    background-size:cover;
+
 }
 
 .formRegistrar {
-    position: absolute;
     display: flex;
     flex-direction: column;
-    background-color: #0c323a;
+    background-color: #2f4858;
     border-radius: 7px;
-    top: 5%;
     padding: 40px;
     box-shadow: 10px 10px 40px rgba(0, 0, 0, 0.4);
-    gap: 5px
+    gap: 5px;
 }
 
 .formRegistrar h1 {

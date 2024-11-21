@@ -1,5 +1,13 @@
 @import url('https://fonts.gMDN Referenceoogleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@font-face{
+    font-family: fonte_topnav;
+    src: url("../fontes/barra_de_navegacao/Sansita-Regular.ttf");
+}
 
+@font-face {
+    font-family: fonte_txths;
+    src: url(../fontes/textoh/LEMONMILK-Bold.otf);
+}
 html, body 
 {
     width: 100vw;
@@ -7,37 +15,107 @@ html, body
     margin: 0 auto;
 }
 
-.topbar 
-{
-    background-color: #082626;
-    height: 20px;
-    padding: 15px;
-    display: flex;
-    align-items: center;
-
-}
-
-.lgnome
-{
-    color: #D9a443;
-    font-family: fonte01;
-
-}
-
-.logo
-{
-    height: 60px;
-    transform: translate(0px,2px);
-    
-}
-
-
-
 body {
     font-family: 'Inter', sans-serif;
     margin: 0;
     padding: 0;
+    color: #ebecf1;
+}
+
+.layout{
+    width: 100vw;
+    height: 100vh;
+    background-color: #082126;
+}
+
+.topbar{
+    padding: 20px;
+    display: flex;
+    height: 32px;
+    font-size: 17px;
+    background-color: #05191D;
+    align-items: center;
+    
+}
+
+.topbar .iclogo{
+    width: 50px;
+    height: 50px;
+    align-items: center;
+    object-fit: cover;
+    transform: translate(5px);
+}
+
+.topbar .top1{
+    display: flex;
+    margin: 0 auto;
+    
+}
+
+
+.navegacao{
+    position: relative;
+    width: 100px;
+    height: 90px;
+    background: transparent;
+    overflow: hidden;
+    transform: translate(20px);
+    transition: 0.5s;
+    border-bottom-left-radius: 30px;
+}
+
+.navegacao:hover{
+    width: 300px;
+    
+}
+
+.navegacao ul{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 70%;
+}
+
+.navegacao ul li{
+    position: relative;
+    list-style: none;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.navegacao ul li a{
+    position: relative;
+    display: flex;
+    text-decoration: none;
+    width: 100%;
     color: #fff;
+    margin-bottom: 15px;
+}
+
+.navegacao ul li a .icon{
+    position: relative;
+    display: block;
+    min-width: 60px;
+    height: 60px;
+    text-align: center;
+    line-height: 70px;
+}
+
+.navegacao ul li a .icon ion-icon{
+    position: relative;
+    font-size: 1.5rem;
+    z-index: 1;
+}
+.navegacao ul li .titulo{
+    position: relative;
+    display: block;
+    height: 60px;
+    line-height: 60px;
+    white-space: nowrap;
+}
+
+.navegacao ul li.ativado{
+    background-color: #D9a443;
 }
 
 .page {
@@ -48,7 +126,7 @@ body {
     justify-content: center;
     width: 100%;
     height: 100vh;
-    background-image: url("../imagens/background.jpg");
+    background-color: #082126;
     background-repeat: no-repeat;
     background-size:cover;
 }
@@ -56,7 +134,7 @@ body {
 .formLogin {
     display: flex;
     flex-direction: column;
-    background-color: #0c323a;
+    background-color: #2f4858;
     border-radius: 7px;
     padding: 40px;
     box-shadow: 10px 10px 40px rgba(0, 0, 0, 0.4);
@@ -66,10 +144,9 @@ body {
 
 
 .formLogin h1 {
-    padding: 0;
-    margin: 0;
+    margin: 0 auto;
     font-weight: 500;
-    font-size: 2.3em;
+    font-size: 2.7em;
 }
 
 .formLogin p {

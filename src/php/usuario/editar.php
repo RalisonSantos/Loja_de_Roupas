@@ -1,7 +1,7 @@
 <?php
     $id = $_GET["id"];
 
-    include(dirname(__DIR__).'/conexao.php');
+    include(dirname(__DIR__).'/conexao/conexao.php');
     
     $dad = $con->query("select * from usuarios where id = $id");
 
@@ -21,7 +21,7 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <title>Registrar</title>
-    <link rel="stylesheet" href="../../css/registrar.css">
+    <link rel="stylesheet" href="../../css/editar.css">
 </head>
 
 <body>
@@ -32,9 +32,8 @@
     <div class="page">
         <form method="POST" action="../../php/usuario/alterar.php" class="formRegistrar">
             <input type="hidden" name="id" value="<?=$id?>" />
-            <h1>Registrar</h1>
-            <p>Digite os seus dados de acesso no campo abaixo.</p>
-
+            <h1>Alterar Usuário</h1>
+            <p>Digite os novos dados nos campos abaixo para alterar.</p>
             <label for="nome">Nome</label>
             <input type="text" placeholder="Digite seu Nome" autofocus="true" id="nome" name="nome" value="<?=$nome?>"/><br>
 

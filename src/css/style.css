@@ -15,10 +15,12 @@ body {
     background-color: #082126;
     align-items: center;
     justify-content: center;
+    overflow-x: hidden;
 }
 
 .layout{
-    background-color: #082126;
+    width: 100vw;
+    height: 100vh;
 }
 
 .topbar{
@@ -26,9 +28,17 @@ body {
     display: flex;
     height: 32px;
     font-size: 17px;
-    background-color: #082626;
+    background-color: #05191D;
     align-items: center;
     
+}
+
+.topbar .iclogo{
+    width: 50px;
+    height: 50px;
+    align-items: center;
+    object-fit: cover;
+    transform: translate(5px);
 }
 
 .topbar .top1{
@@ -39,164 +49,10 @@ body {
 
 .topbar .top1 nav a{
     text-decoration: none;
-    color: #D9a443;
+    color: #fff;
     margin: 15px;
     font-family: fonte_topnav;
     position: relative;
-}
-
-.topbar .top2{
-    display: flex;  
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
-
-.topbar .top2 nav .opcoes {
-    display: flex;
-    text-decoration: none;
-    color: #D9a443;
-    margin-right: 15px;
-    font-family: fonte_topnav;
-    position: relative;
-    cursor: pointer;
-    font-size: 25px;
-    transform: translate(0px, 15px);
-}
-
-.topbar .top2 .carteira {
-    display: flex;
-    transform: translate(-80px, -20px);
-}
-
-
-.topbar .top2 .carteira img {
-    width: 33px;
-    height: 33px;
-    color: #D9a443;
-    cursor: pointer;
-
-}
-
-.lopcoes {
-    position: fixed;
-    top: 10px;
-    right: -450px;
-    width: 250px;
-    height: 335px;
-    background-color: #082626;
-    border-radius: 5px;
-    color: white;
-    transition: right 0.3s;
-    z-index: 10px;
-    border: 4px solid #D9a443;
-    
-}
-
-.lopcoes .voltar{
-    transform: translate(200px,-43px);
-    font-size: 23px;
-    color: #D9a443;
-    cursor: pointer;
-}
-
-.lopcoes{
-    transform: translate(-20px, 5px);
-}
-
-
-.lopcoes h4{
-    transform: translate(30px,8px);
-    width: 150px;
-    font-size: 18px;
-}
-
-.lopcoes .op{
-    transform: translate(25px, -30px);
-    border: 2px solid #D9a443;
-    border-radius: 4px;
-    padding: 10px;
-    width: 70%;
-    text-align: center;
-    cursor: pointer;
-}
-
-
-.lopcoes.ativado{
-   right: 0;
-}
-
-.usuario{
-    position: fixed;
-    top: 100px;
-    right: -270px;
-    width: 250px;
-    height: 120px;
-    background-color: #155f4e;
-    margin-top: 45px;
-    border-radius: 5px;
-    transition: right 0.3s;
-    text-align: center;
-
-}
-
-.usuario a{
-    padding-bottom: 10px;
-    text-decoration: none;
-    color: #fff;
-    padding: 10px;
-    width: 200px;
-    display: flex;
-    flex-direction: column;
-    margin: 0 auto;
-      
-}
-
-.usuario {
-    transform: translate(-22px,90px);
-}
-
-.usuario.atv_usuario{
-    right: 0;
- }
-
- .fornecedor{
-    position: fixed;
-    top: 150px;
-    right: -270px;
-    width: 250px;
-    height: 120px;
-    background-color: #38684f;
-    margin-top: 45px;
-    border-radius: 5px;
-    transition: right 0.3s;
-    text-align: center;
-}
-
-.fornecedor a{
-    padding-bottom: 10px;
-    text-decoration: none;
-    color: #fff;
-    padding: 10px;
-    width: 200px;
-    display: flex;
-    flex-direction: column;
-    margin: 0 auto;
-      
-}
-
-.fornecedor.atv_fornecedor{
-    right: 0;
- }
-
-.fornecedor {
-    transform: translate(-22px,40px);
-}
-
-.topbar img{
-    width: 65px;
-    height: 65px;
-    align-items: center;
 }
 
 .topbar .top1 a::after{
@@ -212,6 +68,73 @@ body {
 
 .topbar .top1 a:hover::after{
     width: 100%;
+}
+
+.navegacao{
+    position: relative;
+    width: 100px;
+    height: 90px;
+    background: transparent;
+    overflow: hidden;
+    transform: translate(20px);
+    transition: 0.5s;
+    border-bottom-left-radius: 30px;
+}
+
+.navegacao:hover{
+    width: 300px;
+    height: 300px;
+    margin-top: 15.8%;
+    background: #05191D;
+}
+
+.navegacao ul{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 70%;
+}
+
+.navegacao ul li{
+    position: relative;
+    list-style: none;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.navegacao ul li a{
+    position: relative;
+    display: flex;
+    text-decoration: none;
+    width: 100%;
+    color: #fff;
+    margin-bottom: 15px;
+}
+
+.navegacao ul li a .icon{
+    position: relative;
+    display: block;
+    min-width: 60px;
+    height: 60px;
+    text-align: center;
+    line-height: 70px;
+}
+
+.navegacao ul li a .icon ion-icon{
+    position: relative;
+    font-size: 1.5rem;
+    z-index: 1;
+}
+.navegacao ul li .titulo{
+    position: relative;
+    display: block;
+    height: 60px;
+    line-height: 60px;
+    white-space: nowrap;
+}
+
+.navegacao ul li.ativado{
+    background-color: #D9a443;
 }
 
 .Meio{

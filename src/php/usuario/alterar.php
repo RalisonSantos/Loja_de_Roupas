@@ -5,7 +5,7 @@
     $data = $_POST["data"];
     $senha = $_POST["senha"];
 
-    include(dirname(__DIR__).'/conexao.php');
+    include(dirname(__DIR__).'/conexao/conexao.php');
     
     $con->query("update loja.usuarios set nome = '$nome', email = '$email', data_nascimento = '$data', senha = '$senha' where id = $id");
 

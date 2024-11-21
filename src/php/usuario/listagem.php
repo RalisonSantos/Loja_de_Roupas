@@ -19,8 +19,7 @@
             <tbody>
                 <?php
 
-                    include(dirname(__DIR__).'/conexao.php');
-
+                    include(dirname(__DIR__).'/conexao/conexao.php');
                     $dad = $con->query("SELECT * FROM loja.usuarios order by nome");
 
                     while ($linha = $dad->fetch_object()){
