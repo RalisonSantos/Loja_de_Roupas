@@ -11,7 +11,6 @@
     $nome = $_POST["nome"];
     $preco = $_POST["preco"];
     $tamanho = $_POST["tamanho"];
-    $modelo = $_POST["modelo"];
     $qtd = $_POST["quantidade"];
     $desc = $_POST["descricao"];
     $categoria = $_POST["categoria"];
