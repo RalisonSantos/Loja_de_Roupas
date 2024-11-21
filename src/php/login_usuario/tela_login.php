@@ -54,7 +54,7 @@
                     <input type="date" placeholder="Data de Nascimento" autofocus="true" id="data" name="data" required/>
 
                     <a href="#">Esqueci minha senha</a>
-                    <a href="../../html/registrar_forcedor.html">Registrar</a>
+                    <a href="../../html/registrar_usuario.html">Registrar</a>
                     </nav>
                     <input type="submit" value="Acessar" class="btn" />
 

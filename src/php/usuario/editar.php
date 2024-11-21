@@ -11,22 +11,35 @@
         $nome = $linha->nome;
         $email = $linha->email;
         $data = $linha-> data_nascimento;
-        $senha = $linha-> senha;
     }
 
     $con->close();
 ?>
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Registrar</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="../js/navbar.js" defer></script>
     <link rel="stylesheet" href="../../css/editar.css">
+    <title>F&L Style</title>
 </head>
-
 <body>
     <div class="topbar">
-        <a href="../../index.html"><img src="../../imagens/logo.png" class="logo" /></a>
+        <a href="../../index.html"><img src="../../imagens/logo3.png" class="iclogo"/></a>
+        <span class="top1"></span>
+        <div class="navegacao">
+            <ul>
+                <li class="lista ativado">
+                    <a href="../login_usuario/tela_login.php">
+                        <span class="icon"><ion-icon name="arrow-back-outline"></ion-icon></span>
+                        <span class="titulo">Voltar</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
     </div>
 
     <div class="page">
@@ -35,13 +48,10 @@
             <h1>Alterar Usuário</h1>
             <p>Digite os novos dados nos campos abaixo para alterar.</p>
             <label for="nome">Nome</label>
-            <input type="text" placeholder="Digite seu Nome" autofocus="true" id="nome" name="nome" value="<?=$nome?>"/><br>
+            <input type="text" placeholder="Digite seu Nome" autofocus="true" id="nome" name="nome" value="<?=$nome?>"/>
 
             <label for="email">E-mail</label>
             <input type="email" placeholder="Digite seu e-mail" autofocus="true" id="email" name="email" value="<?=$email?>" />
-
-            <label for="senha">Senha</label>
-            <input type="password" placeholder="Digite sua senha" name="senha" id="senha" value="<?=$senha?>"/>
 
             <label for="data">Data de Nascimento</label>
             <input type="date" placeholder="Data de Nascimento" autofocus="true" id="data" name="data" value="<?=$data?>" />
