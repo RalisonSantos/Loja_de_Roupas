@@ -49,18 +49,17 @@
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <script src="../js/navbar.js" defer></script>
-    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="../../css/mensagem.css">
     <title>F&L Style</title>
 </head>
 <body>
     <div class="topbar">
         <a href="../../index.html"><img src="../../imagens/logo3.png" class="iclogo"/></a>
-        <div class="top1">
         <span class="top1"></span>
         <div class="navegacao">
             <ul>
                 <li class="lista ativado">
-                    <a href="../produto/registrar_produto.php">
+                    <a href="../login_fornecedor/tela_login.php">
                         <span class="icon"><ion-icon name="arrow-back-outline"></ion-icon></span>
                         <span class="titulo">Voltar</span>
                     </a>
@@ -72,7 +71,7 @@
     <div class="Meio">
         <div class="msg">
             <div class="choice">
-                <h1>Fornecedor Registrado</h1>
+                <h1>Produto Registrado</h1>
                 <a href="../../php/produto/listagem.php">Conferir</a>
             </div>
         </div>
