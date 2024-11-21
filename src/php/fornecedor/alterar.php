@@ -2,11 +2,11 @@
     $id = $_POST["id"];
     $nome = $_POST["nome"];
     $email = $_POST["email"];
-    $senha = $_POST["senha"];
+
 
     include(dirname(__DIR__).'/conexao/conexao.php');
     
-    $con->query("update loja.fornecedores set nome = '$nome', email = '$email', senha = '$senha' where id = $id");
+    $con->query("update loja.fornecedores set nome = '$nome', email = '$email' where id = $id");
 
     $con->close();
 ?>
