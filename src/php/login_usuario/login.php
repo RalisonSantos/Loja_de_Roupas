@@ -5,10 +5,9 @@
     $nome = $_POST["nome"];
     $email = $_POST["email"];
     $senha = $_POST["senha"];
-    $data = $_POST["data"];
     
 
-    $res = $con->query("SELECT * FROM usuarios where nome =  '$nome' and email = '$email' and data_nascimento = '$data'");
+    $res = $con->query("SELECT * FROM usuarios where nome =  '$nome' and email = '$email'");
     $res_senha = $con->query("SELECT senha FROM usuarios where nome =  '$nome' and email = '$email'");
     $linha1 = $res->fetch_object();
     $linha2 = $res_senha->fetch_object();

@@ -47,10 +47,7 @@
                     <input type="email" placeholder="Digite seu e-mail" name="email" required/>
                     <label for="password">Senha</label>
                     <input type="password" placeholder="Digite sua senha" name="senha" required/>
-                    <nav>
-                    <label for="data">Data de Nascimento</label>
-                    <input type="date" placeholder="Data de Nascimento" autofocus="true" id="data" name="data" required/>
-
+                    <nav> 
                     <a href="#">Esqueci minha senha</a>
                     <a href="../../html/registrar_usuario.html">Registrar</a>
                     </nav>
