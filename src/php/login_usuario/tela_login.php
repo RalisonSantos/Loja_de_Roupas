@@ -1,8 +1,7 @@
 <?php
-
     include(dirname(__DIR__).'/conexao/conexao.php');
 
-    $dad = $con->query("select * from usuarios where");
+    $dad = $con->query("select * from usuarios where id");
 
     if($linhaa = $dad->fetch_object()){
 
