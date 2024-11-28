@@ -1,34 +1,23 @@
 <?php
+$id = $_POST["id"];
+$email = $_POST["email"];
+$senha_cripto = password_hash($senha, PASSWORD_DEFAULT);
 
-    $nome = $_POST["nome"];
+include(dirname(__DIR__).'/conexao/conexao.php');
 
-    include(dirname(__DIR__).'/conexao/conexao.php');
+$res = $con->query("select * from fornecedores where id = $id");
 
-    if(isset($_FILES["imagem"])){
-        $imagem = $_FILES["imagem"];
+if($linha = $res->fetch_object()){
 
-        if($imagem["size"] > 3145728){
-            die(include(dirname(__DIR__).'/mensagem_erro.html'));
-        }
+    $id = $linha->id;
+    $nome = $linha->nome;
+    $email = $linha->email;
+}
 
-        $extensao = strtolower(substr($_FILES["imagem"]["name"], -5));
-        $novo_nome = uniqid().$extensao;
-        $pasta = "imagens/";
-        $caminho = $pasta.$novo_nome;
+$con->query("insert into fornecedores(senha) values ('$senha_cripto') where id = '$id'");
 
-        if($extensao != ".jpg" && $extensao != ".png" && $extensao != ".jpeg"){
-            include(dirname(__DIR__).'/mensagem_erro.html'); 
-        }
-
-        move_uploaded_file($_FILES["imagem"]["tmp_name"], $pasta.$novo_nome);
-    }
-
-    $con->query("insert into categorias(nome,imagem, caminho) values ('$nome', '$novo_nome','$caminho')");
-
-    $con->close();
-
- ?>
-
+$con->close();
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -59,13 +48,10 @@
     <div class="Meio">
         <div class="msg">
             <div class="choice">
-                <h1>Categoria Registrado</h1>
-                <a href="../../php/categoria/listagem.php">Conferir</a>
+                <h1>Senha alterada com sucesso</h1>
+                <a href="../../php/login_fornecedor/tela_login.php">Conferir</a>
             </div>
         </div>
     </div>
 </body>
 </html>
-
-
-

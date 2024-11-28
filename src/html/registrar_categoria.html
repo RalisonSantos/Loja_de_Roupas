@@ -24,13 +24,16 @@
         </div>
 
         <div class="page">
-            <form method="POST" action="../php/categoria/salvar.php" class="formRegistrar">
+            <form method="post" action="../php/categoria/salvar.php" class="formRegistrar" enctype="multipart/form-data">
             
                 <h1>Registrar</h1>
                 <p>Digite o nome da categoria no campo abaixo.</p>
 
+                <label for="imagem">Imagem</label>
+                <input type="file" name="imagem" accept="image/*" required>
+
                 <label for="nome">Nome</label>
-                <input type="text" placeholder="Digite o Nome da categoria" autofocus="true" id="nome" name="nome" />
+                <input type="text" placeholder="Digite o Nome da categoria" autofocus="true" id="nome" name="nome" required/>
 
                 <input type="submit" value="Registrar categoria" class="btn" />
 

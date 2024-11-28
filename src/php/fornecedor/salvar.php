@@ -1,6 +1,6 @@
 <?php
 
-$con = new mysqli("localhost", "root", "", "loja");
+include(dirname(__DIR__).'/conexao/conexao.php');
 
 $nome = $_POST["nome"];
 $email = $_POST["email"];

@@ -12,117 +12,154 @@ body {
     
 }
 
-.layout {
-    background-color: #082126;
-}
-
-.topbar2 {
-    display: flex;
+.topbar{
     padding: 20px;
+    display: flex;
     height: 32px;
     font-size: 17px;
-    background-color: #082626;
-    align-items: center; 
-
-}
-
-.topbar2 img {
-    height: 65px;
+    background-color: #05191D;
+    align-items: center;
     
 }
 
-
-.logo img {
-    height: 40px;
+.topbar .iclogo{
+    width: 50px;
+    height: 50px;
+    align-items: center;
+    object-fit: cover;
+    transform: translate(5px);
 }
 
-select {
-    padding: 10px;
-    font-size: 14px;
-    width: 100%;
-    margin-bottom: 10px;
-    border: 1px solid #395757;
-    background-color: #395757;
-    color: #D9a443;
-    border-radius: 5px;
-  }
-
-
-nav ul {
-    list-style: none;
+.topbar .top1{
     display: flex;
-    gap: 20px;
+    margin: 0 auto;
+    
+}
+.navegacao{
+    position: relative;
+    width: 100px;
+    height: 90px;
+    background: transparent;
+    overflow: hidden;
+    transform: translate(20px);
+    transition: 0.5s;
+    border-bottom-left-radius: 30px;
 }
 
-nav ul li a {
+.navegacao:hover{
+    width: 300px;
+    height: 95px;
+}
+
+.navegacao ul{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 70%;
+}
+
+.navegacao ul li{
+    position: relative;
+    list-style: none;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.navegacao ul li a{
+    position: relative;
+    display: flex;
     text-decoration: none;
-    color: black;
-    font-weight: bold;
+    width: 100%;
+    color: #fff;
+    margin-bottom: 15px;
+}
+
+.navegacao ul li a .icon{
+    position: relative;
+    display: block;
+    min-width: 60px;
+    height: 60px;
+    text-align: center;
+    line-height: 70px;
+}
+
+.navegacao ul li a .icon ion-icon{
+    position: relative;
+    font-size: 1.5rem;
+    z-index: 1;
+}
+.navegacao ul li .titulo{
+    position: relative;
+    display: block;
+    height: 60px;
+    line-height: 60px;
+    white-space: nowrap;
+}
+
+.navegacao ul li.ativado{
+    background-color: #1d2f33
+    ;
 }
 
 main {
     display: flex;
     padding: 20px;
+    margin-top: 10px;
 }
-.div {
-    margin-bottom: 15px;
-    margin-left: 45px;
-}
-
-
-.filter-menu {
-    width: 20%;
-    background-color: #548181;
-    padding: 15px;
-    border-radius: 10px;
-    margin-right: 20px;
-    color: #D9a443;
-    width: 250px;
-    height: 360px;
-    transform: translate(0px,32px);
-    
-    
-    
-}
-
-.filter-menu h3 {
-    margin-bottom: 20px;
-}
-
-.filter-menu ul {
-    list-style: none;
-}
-
-.filter-menu ul li {
-    margin-bottom: 10px;
-    cursor: pointer;
-}
-
 .products {
-    width: 80%;
+    width: 100vw;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-    overflow: scroll;
-    height: 100vh;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 50px;
+    overflow-y: none;
+
 }
 
 .product-item {
-    background-color: #1f4e4e;
+    background-color: #1d2f33;
+    height: 90%;
     padding: 20px;
     border-radius: 10px;
     text-align: center;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    color: #D9a443
-    
-    
+    color: #D9a443 ;
+}
+.product-item img {
+    width: 100%;
+    height: 60%;
+    object-fit: cover;
+    border-radius: 20px;
+   
+}
+.product-item h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    font-size: 30px;
+    color: #fff;
+
 }
 
-.product-item img {
-    max-width: 100%;
-    height: auto;
-    margin-bottom: 10px;
-   
+.product-item a{
+    text-decoration: none;
+    color: #fff;
+    background-color: black;
+    width: 100px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    border-radius: 20px;
+    font-family:Arial, Helvetica, sans-serif;
+    transition: 0.2s;
+}
+
+.product-item label{
+    color: #fff;
+    font-weight: normal;
+    display: grid;
+    grid-template-columns: 100px 100px 100px 100px 100px 100px;
+    font-size: 20px;
+
 }
 
 
@@ -131,26 +168,5 @@ main {
     font-weight: bold;
 }
 
-.price {
-    color: green;
-    font-weight: bold;
-}
 
-.price-discount {
-    text-decoration: line-through;
-    color: #888;
-}
 
-.discount {
-    color: red;
-}
-
-/* Rodapé */
-.rodape {
-    background: #333;
-    color: #fff;
-    text-align: center;
-    padding: 0.5rem 0;
-    margin-top: 100px;
-
-}

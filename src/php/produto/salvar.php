@@ -23,12 +23,12 @@
             die(include(dirname(__DIR__).'/mensagem_erro.html'));
         }
 
-        $extensao = strtolower(substr($_FILES["imagem"]["name"], -4));
+        $extensao = strtolower(substr($_FILES["imagem"]["name"], -5));
         $novo_nome = uniqid().$extensao;
         $pasta = "imagens/";
         $caminho = $pasta.$novo_nome;
 
-        if($extensao != ".jpg" && $extensao != ".png"){
+        if($extensao != ".jpg" && $extensao != ".png" && $extensao != ".jpeg"){
             include(dirname(__DIR__).'/mensagem_erro.html'); 
         }
 

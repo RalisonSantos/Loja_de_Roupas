@@ -48,7 +48,7 @@
                     <label for="password">Senha</label>
                     <input type="password" placeholder="Digite sua senha" name="senha" required/>
                     <nav>
-                    <a href="#">Esqueci minha senha</a>
+                    <a href="../../html/esqueceu_senha_fornecedor.html">Esqueci minha senha</a>
                     <a href="../../html/registrar_forcedor.html">Registrar</a>
                     </nav>
                     <input type="submit" value="Acessar" class="btn" />
