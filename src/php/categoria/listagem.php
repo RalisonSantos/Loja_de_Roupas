@@ -34,6 +34,9 @@
 
                     while ($linha = $dad->fetch_object()){
                         echo "<tr>\n";
+                        echo "<td>\n";
+                        echo "<img height='100' width='100' src='$linha->caminho' >";
+                        echo "</td>\n";
                         echo "<td>" . $linha->nome . "</td>\n";
                         echo "<td>\n";
                         echo "<a href='editar.php?id=$linha->id'>Editar</a>";

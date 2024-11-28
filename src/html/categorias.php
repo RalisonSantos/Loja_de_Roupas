@@ -29,7 +29,7 @@
                 $dad = $con->query("SELECT * FROM loja.categorias order by nome");
                 while ($linha = $dad->fetch_object()){
                     echo "<div class='product-item'>";
-                    //echo "<img src='../php/produto/$linha->caminho'>";
+                    echo "<img src='../php/categoria/$linha->caminho'>";
                     echo "<h1>" . $linha->nome . "</h1>";
                     echo "<a href='#'>";
                     echo "Comprar";
