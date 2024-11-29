@@ -21,6 +21,7 @@
         <table class="tabela">
             <thead>
                 <tr>
+                    <th>Imagem</th>
                     <th>Nome</th>
                     <th>Opções</th>
                 </tr>
