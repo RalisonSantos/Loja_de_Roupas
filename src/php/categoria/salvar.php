@@ -17,7 +17,7 @@
         $caminho = $pasta.$novo_nome;
 
         if($extensao != ".jpg" && $extensao != ".png" && $extensao != ".jpeg"){
-            include(dirname(__DIR__).'/mensagem_erro.html'); 
+           echo "erro";
         }
 
         move_uploaded_file($_FILES["imagem"]["tmp_name"], $pasta.$novo_nome);
